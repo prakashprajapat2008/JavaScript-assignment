@@ -439,3 +439,180 @@ let maxAllowed = 40;
 console.log(classStrength <= maxAllowed)
 
 
+
+
+
+
+// Additional Questions (Addition +)-----------------------------------------------------------------------------------------------------------?
+// 1. Addition +  -----------------------------------------------------------------------------------------------------------------------------?
+let A = "10";
+let B = 5;
+let Result = A + B;
+console.log(Result)     ;105
+
+let x = 5;
+let y = "3";
+let result = x + y;
+console.log(result)      ;53
+
+let p = "Hello";
+let q = "World";
+let result = p + " " + q;
+console.log(result)        ;"Hello World"
+
+let m = 0;
+let n = false;
+let result = m + n;
+console.log(result)         ;0
+
+let val1 = 100;
+let val2 = "200";
+let val3 = val1 + val2;
+console.log(val3)           ;100200
+
+
+// 2. Subtraction -  ----------------------------------------------------------------------------------------------------------------------------?
+let a = "10";
+let b = 3;
+let result = a - b;
+console.log(result)         ;7
+
+let x = "20";
+let y = "5";
+let result = x - y;
+console.log(result)           ;15
+
+let p = "abc";
+let q = 1;
+let result = p - q;
+console.log(result)          ;NaN
+
+let m = 10;
+let n = 0;
+let result = m / n;
+console.log(result)           ;Infinity
+
+let val = 0 / 0;
+console.log(val)              ;NaN
+
+
+// 3. Multiplication *  ----------------------------------------------------------------------------------------------------------------------?
+let a = "5";
+let b = 4;
+let result = a * b;
+console.log(result)            ;20
+
+let x = "10";
+let y = "2";
+let result = x * y;
+console.log(result)             ;20
+
+let p = "hello";
+let q = 2;
+let result = p * q;
+console.log(result)              ;NaN
+
+let m = 5;
+let n = "0";
+let result = m * n;
+console.log(result)               ;0
+
+
+let val1 = 3;
+let val2 = "4";
+let val3 = val1 * val2;
+console.log(val3)                  ;12
+
+
+// 4. Division /    ---------------------------------------------------------------------------------------------------------------------------?
+let a = "20";
+let b = 4;
+let result = a / b;
+console.log(result)               ;5
+
+let x = "100";
+let y = "5";
+let result = x / y;
+console.log(result)             ;20
+
+let p = 10;
+let q = 0;
+let result = p / q;
+console.log(result)              ;Infinity
+
+let m = -10;
+let n = 0;
+let result = m / n;
+console.log(result)              ;-Infinity
+
+let val = 0 / 0;
+console.log(val)                ;NaN
+
+
+// 5. Modulus %   -----------------------------------------------------------------------------------------------------------------------------?
+let a = 10;
+let b = 0;
+let result = a % b;
+console.log(result)            ;NaN
+
+let x = 0;
+let y = 5;
+let result = x % y;
+console.log(result)             ;0
+
+let p = -10;
+let q = 3;
+let result = p % q;
+console.log(result)                ;-1
+
+let m = 10;
+let n = -3;
+let result = m % n;
+console.log(result)                ;1
+
+let val1 = -10;
+let val2 = -3;
+let val3 = val1% val2;
+console.log(val3)                  ;-1
+
+
+// 6. Exponentiation **   --------------------------------------------------------------------------------------------------------------------?
+let side = -2;
+let area = side ** 2;
+console.log(area)              ;4
+
+let base = 2;
+let power = -1;
+let result = base ** power;
+console.log(result)                ;0.5
+
+let val = 2 ** -2;
+console.log(val)                 ;0.25
+
+let x = 3;
+let y = 2;
+let z = x ** y;
+console.log(z)                  ;9
+
+let a = 10;
+let b = 0;
+let result = a ** b;
+console.log(result)              ;1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

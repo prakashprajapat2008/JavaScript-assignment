@@ -450,100 +450,100 @@ let B = 5;
 let Result = A + B;
 console.log(Result)     ;105
 
-let x = 5;
-let y = "3";
-let result = x + y;
-console.log(result)      ;53
+let X = 5;
+let Y = "3";
+let Result1 = X+ Y;
+console.log(Result1)      ;53
 
-let p = "Hello";
-let q = "World";
-let result = p + " " + q;
-console.log(result)        ;"Hello World"
+let R = "Hello";
+let K = "World";
+let result2 = R + " " + K;
+console.log(result2)        ;"Hello World"
 
-let m = 0;
-let n = false;
-let result = m + n;
-console.log(result)         ;0
+let O = 0;
+let I = false;
+let result3 = O + I;
+console.log(result3)         ;0
 
-let val1 = 100;
-let val2 = "200";
-let val3 = val1 + val2;
-console.log(val3)           ;100200
+let Val1 = 100;
+let Val2 = "200";
+let Val3 = Val1 + Val2;
+console.log(Val3)           ;100200
 
 
 // 2. Subtraction -  ----------------------------------------------------------------------------------------------------------------------------?
-let a = "10";
-let b = 3;
-let result = a - b;
-console.log(result)         ;7
+let N = "10";
+let V = 3;
+let result4 = N - V;
+console.log(result4)         ;7
 
-let x = "20";
-let y = "5";
-let result = x - y;
-console.log(result)           ;15
+let E = "20";
+let S = "5";
+let result5 = E - S;
+console.log(result5)           ;15
 
-let p = "abc";
-let q = 1;
-let result = p - q;
-console.log(result)          ;NaN
+let o = "abc";
+let u = 1;
+let Result6 = o - u;
+console.log(Result6)          ;NaN
 
-let m = 10;
-let n = 0;
-let result = m / n;
-console.log(result)           ;Infinity
+let W = 10;
+let Q = 0;
+let result9 = W / Q;
+console.log(result9)           ;Infinity
 
-let val = 0 / 0;
-console.log(val)              ;NaN
+let val4 = 0 / 0;
+console.log(val4)              ;NaN
 
 
 // 3. Multiplication *  ----------------------------------------------------------------------------------------------------------------------?
-let a = "5";
-let b = 4;
-let result = a * b;
-console.log(result)            ;20
+let l = "5";
+let e = 4;
+let result8 = l * e;
+console.log(result8)            ;20
 
-let x = "10";
-let y = "2";
-let result = x * y;
-console.log(result)             ;20
+let d = "10";
+let f = "2";
+let result7 = d * f;
+console.log(result7)             ;20
 
-let p = "hello";
-let q = 2;
-let result = p * q;
-console.log(result)              ;NaN
+let h = "hello";
+let j = 2;
+let reSult = h * j;
+console.log(reSult)              ;NaN
 
-let m = 5;
-let n = "0";
-let result = m * n;
-console.log(result)               ;0
+let ak = 5;
+let pd = "0";
+let resUlt = ak * pd;
+console.log(resUlt)               ;0
 
 
-let val1 = 3;
-let val2 = "4";
-let val3 = val1 * val2;
-console.log(val3)                  ;12
+let val5 = 3;
+let val6 = "4";
+let val7 = val5 * val6;
+console.log(val7)                  ;12
 
 
 // 4. Division /    ---------------------------------------------------------------------------------------------------------------------------?
-let a = "20";
-let b = 4;
-let result = a / b;
-console.log(result)               ;5
+let ka = "20";
+let dp = 4;
+let rEsult = ka / bp;
+console.log(rEsult)               ;5
 
-let x = "100";
-let y = "5";
-let result = x / y;
-console.log(result)             ;20
+let ZX = "100";
+let XZ = "5";
+let resultS = ZX / XZ;
+console.log(resultS)             ;20
 
-let p = 10;
-let q = 0;
-let result = p / q;
-console.log(result)              ;Infinity
+let MN = 10;
+let NM = 0;
+let resultM = MN / NM;
+console.log(resultM)              ;Infinity
 
-let m = -10;
-let n = 0;
-let result = m / n;
-console.log(result)              ;-Infinity
+let mn = -10;
+let nm = 0;
+let results = mn / nm;
+console.log(results)              ;-Infinity
 
 let val = 0 / 0;
 console.log(val)                ;NaN
@@ -552,18 +552,18 @@ console.log(val)                ;NaN
 // 5. Modulus %   -----------------------------------------------------------------------------------------------------------------------------?
 let a = 10;
 let b = 0;
-let result = a % b;
-console.log(result)            ;NaN
+let resultl = a % b;
+console.log(resultl)            ;NaN
 
 let x = 0;
 let y = 5;
-let result = x % y;
-console.log(result)             ;0
+let resultes = x % y;
+console.log(resultes)             ;0
 
 let p = -10;
 let q = 3;
-let result = p % q;
-console.log(result)                ;-1
+let resulte = p % q;
+console.log(resulte)                ;-1
 
 let m = 10;
 let n = -3;
@@ -577,27 +577,27 @@ console.log(val3)                  ;-1
 
 
 // 6. Exponentiation **   --------------------------------------------------------------------------------------------------------------------?
-let side = -2;
-let area = side ** 2;
+let SIde = -2;
+let area = SIde ** 2;
 console.log(area)              ;4
 
 let base = 2;
 let power = -1;
-let result = base ** power;
-console.log(result)                ;0.5
+let resulT = base ** power;
+console.log(resulT)                ;0.5
 
-let val = 2 ** -2;
-console.log(val)                 ;0.25
+let val9 = 2 ** -2;
+console.log(val9)                 ;0.25
 
-let x = 3;
-let y = 2;
-let z = x ** y;
+let L = 3;
+let M = 2;
+let z = L ** M;
 console.log(z)                  ;9
 
-let a = 10;
-let b = 0;
-let result = a ** b;
-console.log(result)              ;1
+let T = 10;
+let P = 0;
+let result1 = T ** P;
+console.log(result1)              ;1
 
 
 

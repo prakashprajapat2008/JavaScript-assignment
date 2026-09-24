@@ -158,3 +158,18 @@ let StudentMinimumAttendance = 80;
 let isAttendance = (StudentAttendance > StudentMinimumAttendance);
 console.log(`The Student Attendance Percentage = ${isAttendance}`)
 
+let isEmailVerified = true;
+let isPhoneVerified = false;
+let Result = (isEmailVerified && isPhoneVerified );
+console.log(`The Verigied is = ${Result}`)
+
+console.log(null && 7);
+console.log(7 && undefined);
+console.log(0 && 5);             // 0 (first falsy)
+console.log(10 && 20);           // 20 (last truthy)
+console.log("a" && "b");         // "b"
+console.log("" && "b");          // "" (first falsy)
+console.log(false && "x");       // false
+console.log("x" && false);       // false
+
+  

@@ -1,4 +1,4 @@
-//1. Addition +
+//1. Addition +   ------------------------------------------------------------------------------------------------------------------------?
 let collection1=15000;
 let collection2=12500;
 let totalCollection=collection1+collection2
@@ -16,7 +16,7 @@ console.log(`the total item sold is ${totalItemSold}`)
 
 
 
-//2. Subtraction -
+//2. Subtraction -    ---------------------------------------------------------------------------------------------------------------------?
 let totalSeat=80;
 let occupiedSeat=53;
 let emptySeat=totalSeat-occupiedSeat;
@@ -34,7 +34,7 @@ console.log(`The remaining box in warehouse are ${remainingBox}`)
 
 
 
-//3. Multiplication *
+//3. Multiplication *  --------------------------------------------------------------------------------------------------------------------?
 let cost=45;
 let notebookQuantity=8;
 let totalPrice=cost*notebookQuantity;
@@ -52,7 +52,7 @@ console.log(`the total plant in 7 row is ${totalPlant}`)
 
 
 
-//4. Division /
+//4. Division /     ----------------------------------------------------------------------------------------------------------------------?
 let pencils=144;
 let totalStudent=12;
 let eachStudent=pencils/totalStudent;
@@ -70,7 +70,7 @@ console.log(`the moiney each depertment get is ${eachDepertment}`)
 
 
 
-//5. Modulus %
+//5. Modulus %    -----------------------------------------------------------------------------------------------------------------------?
 let totalStudents=53;
 let groupOf=5;
 let leftStudent=totalStudents%groupOf
@@ -90,7 +90,7 @@ if (num % 2 === 0) {
 
 
 
-//6. Exponentiation **
+//6. Exponentiation **  --------------------------------------------------------------------------------------------------------------------?
 let Side=6;
 let volume=Side**3;
 console.log(`the volume of cube is ${volume} cm`)
@@ -108,8 +108,8 @@ console.log(`The total number of cells are ${totalCells}`)
 
 
 
-// Part B: Assignment Operators  --------------------------------------------------------------------------------?
-// 1. Simple Assignment =
+// Part B: Assignment Operators  -----------------------------------------------------------------------------------------------------------?
+// 1. Simple Assignment =   -----------------------------------------------------------------------------------------------------------------?
 let age = 18;
 console.log(`Age = ${age}`)
 
@@ -127,7 +127,7 @@ console.log(`PI Vaiue = ${piValue}`)
 
 
 
-//2. Add and Assign +=
+//2. Add and Assign +=    --------------------------------------------------------------------------------------------------------------------?
 let Marks = 200;
 marks += 35;
 console.log(`total Marks = ${marks}`)
@@ -150,7 +150,7 @@ console.log(`Total Books = ${books}`)
 
 
 
-//3. Subtract and Assign -=
+//3. Subtract and Assign -=    ---------------------------------------------------------------------------------------------------------------?
 let water = 1000;
 water -= 375;
 console.log(`Total Water = ${water}`)
@@ -173,7 +173,7 @@ console.log(`Total Score = ${score1}`)
 
 
 
-//4. Multiply and Assign *=
+//4. Multiply and Assign *=    ----------------------------------------------------------------------------------------------------------------?
 let population = 5000;
 population *= 3;
 console.log(`Total Population = ${population}`)
@@ -196,7 +196,7 @@ console.log(`Total Score = ${score}`)
 
 
 
-//5. Divide and Assign /=
+//5. Divide and Assign /=   -------------------------------------------------------------------------------------------------------------------?
 let cloth = 1200;
 cloth /= 4;
 console.log(`Total Cloth Length = ${cloth}`)
@@ -217,7 +217,9 @@ let marks = 2500;
 marks /= 10;
 console.log(`Total Marks = ${marks}`)
 
-//6. Modulus and Assign %= 
+
+
+//6. Modulus and Assign %=    --------------------------------------------------------------------------------------------------------------?
 let candies = 137;
 candies %= 10;
 console.log(`Toyal Candies = ${candies}`)
@@ -240,7 +242,7 @@ console.log(`Total Months = ${months}`)
 
 
 
-//7. Exponentiation and Assign **=
+//7. Exponentiation and Assign **=   -------------------------------------------------------------------------------------------------------?
 let side = 10;
 side **= 2;
 console.log(`Total Area = ${side}`);
@@ -256,8 +258,8 @@ console.log(`Total area growth factor = ${factor}`);
 
 
 
-// Part C: Comparison & Relational Operators---------------------------------------------------------?
-// 1. Loose Equality ==
+// Part C: Comparison & Relational Operators-------------------------------------------------------------------------------------------?
+// 1. Loose Equality ==    ----------------------------------------------------------------------------------------------------------------?
 let StoredPassword = 1234;
 let EnteredPassword = "1234";
 console.log(StoredPassword==EnteredPassword)
@@ -280,7 +282,7 @@ console.log(deviceOneScore == deviceTwoScore)
 
 
 
-//2. Loose Inequality !=
+//2. Loose Inequality !=    ----------------------------------------------------------------------------------------------------------------?
 let code1 = "SAVE10";
 let code2 = "SAVE20";
 console.log(code1 != code2)
@@ -303,7 +305,7 @@ console.log(userId != validId);
 
 
 
-//3. Strict Equality ===
+//3. Strict Equality ===     ---------------------------------------------------------------------------------------------------------------?
 let storedPassword = 1234;
 let enteredPassword = "1234";
 console.log(storedPassword === enteredPassword)
@@ -326,7 +328,7 @@ console.log(Score1 === Score2)
 
 
 
-//4. Strict Inequality !==
+//4. Strict Inequality !==    ------------------------------------------------------------------------------------------------------------?
 let stringId = "101";
 let numberId = 101;
 console.log(stringId !== numberId)
@@ -348,7 +350,8 @@ let playerId2 = 20;
 console.log(playerId1 !== playerId2)
 
 
-// 5. Greater Than >
+
+// 5. Greater Than >    --------------------------------------------------------------------------------------------------------------------?
 let Age = 20;
 let VotingAge = 18;
 console.log(Age > VotingAge)
@@ -371,7 +374,7 @@ console.log(stepsToday > stepsTarget)
 
 
 
-//6. Less Than < 
+//6. Less Than <    -------------------------------------------------------------------------------------------------------------------------?
 let Mrks = 30;
 let failThreshold = 35;
 console.log(Marks < failThreshold)
@@ -394,7 +397,7 @@ console.log(remainingTime < warningLimit)
 
 
 
-//7. Greater Than or Equal >= 
+//7. Greater Than or Equal >=  --------------------------------------------------------------------------------------------------------------?
 let AGE = 18;
 let votingAge = 18;
 console.log( AGE >= votingAge)
@@ -417,7 +420,7 @@ console.log(experience >= requiredExperience)
 
 
 
-//8. Less Than or Equal <=
+//8. Less Than or Equal <=     -----------------------------------------------------------------------------------------------------------?
 let peopleInLift = 7;
 let maxCapacity = 8;
 console.log(peopleInLift + 1 <= maxCapacity)
@@ -471,7 +474,7 @@ let Val3 = Val1 + Val2;
 console.log(Val3)           ;100200
 
 
-// 2. Subtraction -  ----------------------------------------------------------------------------------------------------------------------------?
+// 2. Subtraction -  ------------------------------------------------------------------------------------------------------------------------?
 let N = "10";
 let V = 3;
 let result4 = N - V;

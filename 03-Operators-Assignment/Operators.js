@@ -945,6 +945,28 @@ console.log(val <= limit)             ;true
 
 // Part D: Logical Operators  --------------------------------------------------------------------------------------------------------------------?
 // 1. Logical AND &&  ---------------------------------------------------------------------------------------------------------------------------?
+let username = "admin";
+let password = 1234;
+console.log(username === "admin" && password === 1234)          ;true
+
+let isLoggedIn = true;
+let hasPermission = true;
+console.log(isLoggedIn && hasPermission)                   ;true
+
+let inStock = true;
+let price = 800;
+console.log(inStock && price < 1000)                     ;true
+
+let marks = 75;
+let attendance = 80;
+console.log(marks > 65 && attendance > 70)               ;true
+
+let isWeekend = true;
+let isHoliday = false;
+console.log(isWeekend && isHoliday)                  ;false
+
+
+
 let a = 0;
 let b = 10;
 let Result = a && b;
@@ -973,6 +995,27 @@ console.log(result)                   ;false
 
 
 //2. Logical OR ||  ---------------------------------------------------------------------------------------------------------------------------?
+let passwordCorrect = true;
+let otpValid = false;
+console.log(passwordCorrect || otpValid)            ;true
+
+let isMember = false;
+let hasCoupon = true;
+console.log(isMember || hasCoupon)                     ;true
+
+let age = 16;
+let height = 155;
+console.log(age > 18 || height > 150)                  ;true
+
+let emailGiven = true;
+let phoneGiven = false;
+console.log(emailGiven || phoneGiven)                   ;true
+
+let score = 900;
+let timeBonus = true;
+console.log(score > 1000 || timeBonus)                     ;true
+
+
 let A = 0;
 let B = false;
 let c = "";
@@ -1000,6 +1043,23 @@ console.log(x)                                                       ;ok
 
 
 // 3. Logical NOT !   -------------------------------------------------------------------------------------------------------------------------?
+let isBanned = false;
+console.log(!isBanned)                   ;true
+
+let isCompleted = false;
+console.log(!isCompleted)                  ;true
+
+let isOn = true;
+console.log(!isOn)                         ;false
+
+let isActive = false;
+console.log(!isActive)                  ;true
+
+let isReadOnly = false;
+console.log(!isReadOnly)                   ;true
+
+
+
 let A = 0;
 let B = 1;
 console.log(!A, !B)              ;true ,false
@@ -1024,6 +1084,40 @@ console.log(result)                   ;false
 
 
 // 4. Mixed Logical Operators (&&, ||, !)  ------------------------------------------------------------------------------------------------------?
+let isMember = true;
+let isBanned = false;
+let canEnter = isMember && !isBanned;
+console.log(`Can enter: ${canEnter}`)                   ; true
+
+
+let isStudent = true;
+let isSenior = false;
+isBanned = true;
+let getsDiscount = (isStudent || isSenior) && !isBanned;
+console.log(`Gets discount: ${getsDiscount}`)                   ;false
+
+
+let nameGiven = true;
+let emailGiven = false;
+let phoneGiven = true;
+let isFormValid = nameGiven && (emailGiven || phoneGiven);
+console.log(`Form is valid: ${isFormValid}`)                       ;true
+
+
+let isAdmin = true;
+let hasToken = false;
+let isSuspended = false;
+let canAccess = (isAdmin || hasToken) && !isSuspended;
+console.log(`Can access: ${canAccess}`)                                ;true
+
+
+let score = 1200;
+let timeBonus = false;
+let extraLife = true;
+let levelOpens = score > 1000 && (timeBonus || extraLife);
+console.log(`Level opens: ${levelOpens}`)                               ;true
+
+
 let A = 0;
 let B = 10;
 let C = 20;
@@ -1056,3 +1150,274 @@ console.log(result)                              ;true
 
 
 
+
+// Part E: Increment / Decrement Operators (++ / --)     -------------------------------------------------------------------------------------?
+// Part a:  -----------------------------------------------------------------------------------------------------------------------------------?
+let counter = 5;
+counter++;
+console.log(counter)                     ;6
+
+let lives = 3;
+lives--;
+console.log(lives)                     ;2
+
+let score = 10;
+score++;
+console.log(score)                   ;11
+
+let items = 8;
+items--;
+console.log(items)                   ;7
+
+let count = 0;
+count++;
+count++;
+console.log(count)                 ;2
+
+// Part b:   ----------------------------------------------------------------------------------------------------------------------------?
+let x = 5;
+let y = x++;
+console.log(x, y)           ; 6, 5
+
+let a = 5;
+let b = ++a;
+console.log(a, b)                      ; 6, 6
+
+let lives = 3;
+let previousLives = lives--;
+console.log(lives, previousLives)                          ;2, 3
+
+let attempts = 0;
+let currentAttempts = ++attempts;
+console.log(attempts, currentAttempts)                      ;1, 1
+
+let points = 100;
+points++;
+points--;
+console.log(points)                              ;100
+
+// Part c:   ----------------------------------------------------------------------------------------------------------------------------?
+let x = 10;
+let y = x++;
+let z = ++x;
+console.log(x, y, z)                          ;12,10,12
+
+let a = 5;
+let b = a-- + ++a;
+console.log(a, b)                 ;5,10
+
+let m = 7;
+let n = --m + m++;
+console.log(m, n)                      ;7,12
+
+let p = 3;
+let q = p++ + ++p + p;
+console.log(p, q)                     ;5,13
+
+let val = 0;
+val = val++ + ++val;
+console.log(val)                        ;2
+
+
+
+
+
+// Part F: typeof Operator    -------------------------------------------------------------------------------------------------------------------?
+// Part a:   ------------------------------------------------------------------------------------------------------------------------------?
+let Name = "Rahul";
+console.log(typeof Name)                ; string
+
+let age = 25;
+console.log(typeof age)                  ; number
+
+let isStudent = true;
+console.log(typeof isStudent)                ; boolean
+
+let city;
+console.log(typeof city)                    ; undefined
+
+console.log(typeof null)                  ; object
+
+
+// Part b:  ----------------------------------------------------------------------------------------------------------------------------------?
+console.log(typeof 42)               ;number
+console.log(typeof "Hello")          ;String
+console.log(typeof true)                ;Boolean
+console.log(typeof undefined)               ;undefined
+
+console.log(typeof null)                ;Object
+console.log(typeof {})                    ;Object
+console.log(typeof [])               ;Object
+
+console.log(typeof NaN)                         ;number
+console.log(typeof Infinity)                   ;number
+console.log(typeof function(){})               ;Object
+
+let price = 99.99;
+let message = "Welcome";
+let isActive = false;
+console.log("Type of price:", typeof price)            ;Number
+console.log("Type of message:", typeof message)                ;String
+console.log("Type of isActive:", typeof isActive)           ;Boolean
+
+let value = null;                            ;function
+console.log(typeof value)                       ;Object
+console.log(typeof value === "object")              ;true
+
+
+// Part c:   --------------------------------------------------------------------------------------------------------------------------------?
+console.log(typeof typeof 100)                 ;String
+console.log(typeof typeof "Hi")               ;String
+console.log(typeof typeof true)                  ;String
+
+let a = 10;
+let b = "10";
+console.log(typeof a === typeof b)               ;false
+console.log(typeof a == typeof b)                ;false
+
+console.log(typeof null === "object")              ;true
+console.log(typeof [] === "object")              ;true
+console.log(typeof {} === "object")             ;true
+
+let x;
+console.log(typeof x)                          ;undefined
+x = null;
+console.log(typeof x)                           ;Object
+x = 0;
+console.log(typeof x)                                  ;Number
+
+console.log(typeof NaN === "number")                  ;true
+console.log(typeof Infinity === "number")             ;true
+console.log(typeof (1 / 0))                           ;Number
+
+
+
+
+// Part G: Type Coercion     -----------------------------------------------------------------------------------------------------------------?
+// Part a:    -----------------------------------------------------------------------------------------------------------------------------?
+let numberValue = Number("25") + 10;
+console.log(numberValue)                        ;35
+
+let rupees = String(100) + " rupees";
+console.log(rupees)                             ;100 ,rupees
+
+let zeroBoolean = Boolean(0);
+console.log(zeroBoolean)                               ;false
+
+let helloBoolean = Boolean("Hello");
+console.log(helloBoolean)                            ;true
+
+let multipliedValue = +"50" * 2;
+console.log(multipliedValue)                     ;100
+
+
+// Part b:    -----------------------------------------------------------------------------------------------------------------------------?
+console.log("10" - 5)                  ;5
+console.log("10" + 5)                   ;105
+// console.log("10" * 2)                  ;20
+console.log("10" / 2)                      ;5
+
+console.log("5" - "2")                 ;3
+console.log("5" + "2")                 ;52
+console.log("5" * "2")                  ;10
+// console.log("5" / "2")                    ; 2.5
+
+console.log(Number("123"))                   ;123
+console.log(Number("123abc"))              ;NaN
+console.log(Number(true))                          ;1
+console.log(Number(false))                    ;0
+console.log(Number(null))                        ;0
+console.log(Number(undefined))                       ;NaN
+
+console.log(Boolean(0))                      ;false
+console.log(Boolean(""))                       ;false
+console.log(Boolean("0"))                          ;true
+console.log(Boolean([]))                      ;true
+console.log(Boolean({}))                           ;true
+console.log(Boolean(null))                  ;false
+
+console.log(String(100))                    ;100
+console.log(String(true))                    ;true
+console.log(String(null))                     ;null
+console.log(String(undefined))              ;undefined
+console.log(100 + "")                      ;100
+
+
+Part c:   -------------------------------------------------------------------------------------------------------------------------------?
+console.log("5" + 3 + 2)                ;532
+console.log(5 + 3 + "2")                   ;82
+console.log("5" - 3 + 2)                ;4
+console.log(5 - "3" + "2")                    ;22
+
+console.log(true + true)               ;2
+console.log(true + false)                   ;1
+console.log(true + "false")                     ;truefalse
+console.log(false + "true")                 ;truefalse
+
+console.log(null + 5)                     ;5
+console.log(undefined + 5)                   ;NaN
+console.log(null + "5")                  ;null5
+console.log(undefined + "5")                 ;undefined
+
+console.log([] + [])                         ;[object ,Object]
+console.log([] + {})                         ;[object, Object]
+console.log({} + [])                   ;[object ,Object]
+console.log({} + {})                               ;[object, Object]
+
+let a = "10";
+let b = 5;
+let c = a + b;
+let d = a - b;
+let e = +a + b;
+console.log(c, typeof c)                             ;105,String
+console.log(d, typeof d)                      ;5,Number
+console.log(e, typeof e)                     ;15,Number
+
+console.log(!!"Hello")                                 ;true
+console.log(!!"")                               ;false
+console.log(!!0)                                ;false
+console.log(!!1)                           ;true
+console.log(!!null)                                 ;false
+console.log(!!undefined)                        ;false 
+
+console.log(Number(""))                             ;0
+console.log(Number(" "))                       ;0
+console.log(Number("0"))                          ;0
+console.log(Number("  25  "))                 ;25
+console.log(Number("25px"))                   ; NaN
+
+let val1 = "5";
+let val2 = 2;
+console.log(val1 + val2)                      ;52
+console.log(+val1 + val2)                 ;7
+console.log(val1 - val2)                      ;3
+console.log(val1 * val2)                   ;10
+console.log(val1 / val2)                  ;2.5
+
+
+// Bonus Mixed Practice Questions:    -------------------------------------------------------------------------------------------------?
+let count = 5;
+console.log(typeof count++)                     ;Number
+console.log(count)                             ;6
+console.log(typeof ++count)                         ;Number
+console.log(count)                          ;7
+
+let x = "10";
+let y = ++x;
+console.log(x, y, typeof x, typeof y)                      ;11  ,11  = Number  ,Number
+
+let a = "5";
+let b = a++;
+console.log(a, b, typeof a, typeof b)                   ;6   ,5  =   Number   ,Number
+
+console.log(typeof (1 + "2"))                             ;String
+console.log(typeof (1 - "2"))                            ;Number
+console.log(typeof (1 * "2"))                   ;Number
+console.log(typeof (1 / "2"))                    ;Number
+
+let val = null                                  
+console.log(typeof val)                              ;Object
+console.log(val + 1)                             ;1
+console.log(val - 1)                                 ;-1
+console.log(val * 1)                            ;0
+console.log(Boolean(val))                          ;false

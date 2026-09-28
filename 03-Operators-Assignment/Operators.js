@@ -1408,7 +1408,7 @@ console.log(x, y, typeof x, typeof y)                      ;11  ,11  = Number  ,
 
 let a = "5";
 let b = a++;
-console.log(a, b, typeof a, typeof b)                   ;6   ,5  =   Number   ,Number
+console.log(a, b, typeof a, typeof b)                   ;6  ,5  =   Number   ,Number
 
 console.log(typeof (1 + "2"))                             ;String
 console.log(typeof (1 - "2"))                            ;Number

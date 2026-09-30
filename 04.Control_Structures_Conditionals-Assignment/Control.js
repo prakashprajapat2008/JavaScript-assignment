@@ -293,6 +293,7 @@ if (age>=18){
 
 }
 
+
 //Q3
 let scoreMarkas=Number(prompt("enter score:-"))
 if (scoreMarkas>=40){

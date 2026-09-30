@@ -151,8 +151,10 @@ if (numberToCheck >=0) {
 
 
 
-//C] if...else if...else Statement
-//Q1
+
+
+//C] if...else if...else Statement  ----------------------------------------------------------------------------------------?
+// Q=1 ---------------------------------------------------------------?
 let month = Number(prompt("Enter a number: "));
 if (month==1 || month==2|| month==12){
     console.log("winter")
@@ -164,7 +166,8 @@ if (month==1 || month==2|| month==12){
     console.log("Autumn")
 }
 
-//Q2
+
+// Q=2 ---------------------------------------------------------------------?
 let income = Number(prompt("Enter a income: "));
 if (income<300000){
     console.log("no text")
@@ -176,7 +179,8 @@ if (income<300000){
     conasole.log("15% discount")
 }
 
-//Q3
+
+// Q=3 -----------------------------------------------------------------------?
 let score=Number(prompt("enter student score:-"))
 if (score>=90){
     console.log("outstanding")
@@ -188,7 +192,8 @@ if (score>=90){
     console.log("Need inprovment")
 }
 
-//Q4
+
+// Q=4 ----------------------------------------------------------------?
 let speed=Number(prompt("enter the speed:-"))
 if (speed<40){
     console.log("slow")
@@ -198,7 +203,8 @@ if (speed<40){
     console.log("Fast")
 }
 
-//Q5
+
+// Q=5 -----------------------------------------------------------------?
 let personHeight=Number(prompt("enter your height:-"))
 if (personHeight<150){
     console.log("Short")
@@ -208,7 +214,8 @@ if (personHeight<150){
     console.log("Tall")
 }
 
-//Q6
+
+// Q=6 ---------------------------------------------------------------?
 let day=Number(prompt("enter the day:-"))
 if (day>=1 && day <=5){
     console.log("weekday")
@@ -216,7 +223,8 @@ if (day>=1 && day <=5){
     console.log("Weekend")
 }
 
-//Q7
+
+// Q=7 ----------------------------------------------------------------?
 let units = Number(prompt("Enter electricity units:"));
 let bill;
 if (units <= 50) {
@@ -229,8 +237,7 @@ if (units <= 50) {
 console.log("Total Electricity Bill: ₹" + bill);
 
 
-
-//Q8
+// Q=8 --------------------------------------------------------------------?
 let attendance = Number(prompt("Enter attendance percentage:"));
 if (attendance >= 90) {
     console.log("Excellent");
@@ -242,11 +249,11 @@ if (attendance >= 90) {
     console.log("Poor");
 }
 
-//Q9
+
+// Q=9 ----------------------------------------------------------------------?
 let mark1 = Number(prompt("Enter first subject mark:"));
 let mark2 = Number(prompt("Enter second subject mark:"));
 let mark3 = Number(prompt("Enter third subject mark:"));
-
 if (mark1 >= mark2 && mark1 >= mark3) {
     console.log("Highest Mark: " + mark1);
 } else if (mark2 >= mark1 && mark2 >= mark3) {
@@ -255,7 +262,8 @@ if (mark1 >= mark2 && mark1 >= mark3) {
     console.log("Highest Mark: " + mark3);
 }
 
-//Q10
+
+// Q=10 -------------------------------------------------------------------?
 let number = Number(prompt("Enter a number:"));
 if (number === 0) {
     console.log("Zero");
@@ -273,9 +281,8 @@ if (number === 0) {
 
 
 
-//D. Nested if Statement
-
-//Q1
+//D. Nested if Statement  -------------------------------------------------------------------------------------------------?
+// Q=1 ---------------------------------------------------------------------------?
 let num1=Number(prompt("enter an number:-"))
 if (num1>10){
     if(num1%3==0){
@@ -283,7 +290,8 @@ if (num1>10){
     }
 }
 
-//Q2
+
+// Q=2 ---------------------------------------------------------------------------?
 let age=Number(prompt("enter the age:-"))
 let voterId=true
 if (age>=18){
@@ -293,7 +301,8 @@ if (age>=18){
 
 }
 
-//Q3
+
+// Q=3 -------------------------------------------------------------------?
 let scoreMarkas=Number(prompt("enter score:-"))
 if (scoreMarkas>=40){
     if (scoreMarkas>=80){
@@ -301,7 +310,8 @@ if (scoreMarkas>=40){
     }
 }
 
-//Q4
+
+// Q=4 ----------------------------------------------------------------?
 let pin=Number(prompt("enter your pin"))
 let accountBalance=1213111;
 if (pin==1213){
@@ -310,7 +320,8 @@ if (pin==1213){
     }
 }
 
-//Q5
+
+// Q=5 ---------------------------------------------------------------?
 let year=Number(prompt("enter year:-"))
 if (year%4==0){
     if (year%100==0){
@@ -318,10 +329,24 @@ if (year%4==0){
     }
 }
 
-//Q6
+
+// Q=6 -----------------------------------------------------------------?
 
 
-//Q7
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Q=7 -------------------------------------------------------------------------?
 let cartTotal = Number(prompt("Enter cart total:"));
 let isPremium = prompt("Are you a premium member? (yes/no)");
 if (cartTotal >= 1000) {
@@ -334,7 +359,7 @@ if (cartTotal >= 1000) {
 console.log("Final Amount: ₹" + cartTotal);
 
 
-//Q8
+// Q=8 ---------------------------------------------------------------------?
 let number = Number(prompt("Enter a number:"));
 if (number > 0) {
     if (number % 2 === 0) {
@@ -345,7 +370,7 @@ if (number > 0) {
 }
 
 
-//Q9
+// Q=9 ---------------------------------------------------------------------------?
 let age = Number(prompt("Enter your age:"));
 let hasDegree = prompt("Do you have a graduation degree? (yes/no)");
 let experience = Number(prompt("Enter your years of experience:"));
@@ -359,7 +384,7 @@ if (age >= 21 && age <= 30) {
 }
 
 
-//Q1010
+// Q=10 -----------------------------------------------------------------------------?
 let present = prompt("Is the student present? (yes/no)");
 let internalMarks = Number(prompt("Enter internal marks:"));
 let externalMarks = Number(prompt("Enter external marks:"));
@@ -377,9 +402,325 @@ if (present === "yes") {
 
 
 
+// switch Statement – 10 Questions -------------------------------------------------------------------------------------?
+// Q=1 --------------------------------------------------------------------?
+let month = 7;
+switch (month) {
+	case 1:
+		console.log(31);
+		break;
+	case 2:
+		console.log(28);
+		break;
+	case 3:
+		console.log(31);
+		break;
+	case 4:
+		console.log(30);
+		break;
+	case 5:
+		console.log(31);
+		break;
+	case 6:
+		console.log(30);
+		break;
+	case 7:
+		console.log(31);
+		break;
+	case 8:
+		console.log(31);
+		break;
+	case 9:
+		console.log(30);
+		break;
+	case 10:
+		console.log(31);
+		break;
+	case 11:
+		console.log(30);
+		break;
+	case 12:
+		console.log(31);
+		break;
+	default:
+		console.log("Invalid month number");
+}
 
 
+// Q=2 --------------------------------------------------------------------------?
+let characterToCheck = "a";
+switch (characterToCheck) {
+		case "a":
+		console.log("Vowewl");
+		break;
+	case "e":
+		console.log("Vowewl");
+		break;
+	case "i":
+		console.log("Vowewl");
+		break;
+	case "o":
+		console.log("Vowewl");
+		break;
+	case "u":
+		console.log("Vowewl");
+		break;
+    case "A":
+		console.log("Vowewl");
+		break;
+	case "E":
+		console.log("Vowewl");
+		break;
+	case "I":
+		console.log("Vowewl");
+		break;
+	case "O":
+		console.log("Vowewl");
+		break;
+	case "U":
+		console.log("Vowewl");
+		break;
+    default:
+		console.log("Consonant")
+}
 
+
+//  Q=3 ------------------------------------------------------------------?
+Number = "2";
+switch(true){
+case Number == 1 || Number == 2:
+		console.log("Winter");
+		break;
+	case Number == 3 || Number == 4:
+		console.log(" Summer");
+		break;
+	default:
+        console.log("Other")
+}
+
+
+// Q=4 -----------------------------------------------------------------?
+let Marks = "90";
+switch (true) {
+	case (Marks >= 75):
+		console.log("Distinction");
+		break;
+	case (Marks >= 60):
+		console.log("1st class");
+		break;
+	case (Marks >= 50):
+		console.log("2nd class");
+		break;
+	case (Marks >= 35):
+		console.log("3nd class");
+		break;
+	default:
+		console.log("Fail");
+}
+
+
+// Q=5 ------------------------------------------------------------------------?
+let role = "admin";
+let action = "create";
+switch (role) {
+	case "admin":
+		switch (action) {
+			case "create":
+				console.log("create");
+				break;
+			case "edit":
+				console.log("edit");
+				break;
+			case "delete":
+				console.log("delete");
+				break;
+		}
+		break;
+	case "user":
+		console.log("Limited Access");
+		break;
+	default:
+		console.log("Invalid role");
+}
+
+
+// Q=6 -------------------------------------------------------------------?
+let fruit = "mango";
+switch (fruit) {
+  case "apple":
+    console.log("Apple is red");
+    break;
+  case "mango":
+    console.log("Mango is yellow");
+    break;
+  case "banana":
+    console.log("Banana is yellow");
+    break;
+  default:
+    console.log("Unknown fruit");
+}
+
+// Q=7 -------------------------------------------------------------------------?
+let x = null;
+switch(typeof(x)){
+    case "number":
+        console.log("number");
+        break;
+    case "string":
+        console.log("string");
+        break;
+    case "boolean":
+        console.log("Boolean");
+        break;
+    case "undefined":
+        console.log("Undefined");
+        break;
+    case "object":
+        console.log("null");
+        break;
+    default:
+        console.log("Invalid datatype!")
+}
+
+
+// Q=8 --------------------------------------------------------------------------?
+let operator = "/";
+let a = 20;
+let b = 0;
+switch (operator) {
+  case "+":
+    console.log(a + b);
+    break;
+  case "-":
+    console.log(a - b);
+    break;
+  case "*":
+    console.log(a * b);
+    break;
+  case "/":
+    switch (b){
+    case 0:
+        console.log(0);
+        break;
+      default:
+        console.log(a/b)
+    }
+    break;
+  case "%":
+    console.log(a % b);
+    break;
+  case "**":
+    console.log(a ** b);
+    break;
+  default:
+    console.log("Invalid operator");
+}
+
+
+// Q=9 -----------------------------------------------------------?
+let data = 20;
+switch (true) {
+	case data >= 1 && data <= 10:
+		console.log("Beginning of the month");
+		break;
+	case data >= 11 && data <= 20:
+		console.log("Middle of the month");
+		break;
+	case data >= 21 && data <= 31:
+		console.log("End of the month");
+		break;
+	default:
+		console.log("Invalid day of the month");
+}
+
+
+// Q=10 ----------------------------------------------------------------------?
+let Category = "veg";
+let Item = "pav";
+let Size = "half";
+let foodPrice;
+switch (Category) {
+    case "veg":
+        switch (Item) {
+            case "Pasta":
+                switch (Size) {
+                    case "full":
+                        foodPrice = 999;
+                        break;
+
+                    case "half":
+                        foodPrice = 599;
+                        break;
+                }
+                break;
+            case "paneer":
+                switch (Size) {
+                    case "full":
+                        foodPrice = 999;
+                        break;
+
+                    case "half":
+                        foodPrice = 599;
+                        break;
+                }
+                break;
+            case "pav":
+                switch (Size) {
+                    case "full":
+                        foodPrice = 999;
+                        break;
+
+                    case "half":
+                        foodPrice = 599;
+                        break;
+                }
+                break;
+        }
+        break;
+    case "nonveg":
+
+        switch (Item) {
+
+            case "item1":
+                switch (Size) {
+                    case "full":
+                        foodPrice = 999;
+                        break;
+
+                    case "half":
+                        foodPrice = 599;
+                        break;
+                }
+                break;
+            case "item2":
+                switch (Size) {
+                    case "full":
+                        foodPrice = 999;
+                        break;
+
+                    case "half":
+                        foodPrice = 599;
+                        break;
+                }
+                break;
+            case "item3":
+                switch (Size) {
+                    case "full":
+                        foodPrice = 999;
+                        break;
+
+                    case "half":
+                        foodPrice = 599;
+                        break;
+                }
+                break;
+        }
+        break;
+}
+console.log(`Food Category => ${Category}`);
+console.log(`Food Item => ${Item}`);
+console.log(`Food Plate => ${Size}`);
+console.log(`Food Price => ${foodPrice}`);
 
 
 

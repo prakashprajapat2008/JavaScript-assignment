@@ -293,7 +293,6 @@ if (age>=18){
 
 }
 
-
 //Q3
 let scoreMarkas=Number(prompt("enter score:-"))
 if (scoreMarkas>=40){
@@ -320,8 +319,6 @@ if (year%4==0){
 }
 
 //Q6
-
-
 
 
 //Q7
@@ -362,7 +359,7 @@ if (age >= 21 && age <= 30) {
 }
 
 
-//Q10
+//Q1010
 let present = prompt("Is the student present? (yes/no)");
 let internalMarks = Number(prompt("Enter internal marks:"));
 let externalMarks = Number(prompt("Enter external marks:"));

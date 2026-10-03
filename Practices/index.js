@@ -512,11 +512,30 @@
 // }
 
 
-let num = 7;
-let result = num % 2 === 0 ? "Even" : "Odd";
-console.log(result);
+// let num = 7;
+// let result = num % 2 === 0 ? "Even" : "Odd";
+// console.log(result);
+
+// let number = 0;
+// let sign = number > 0 ? "Positive" : number < 0 ? "Negative" : "Zero";
+// console.log(`${number} is => ${sign}`);
 
 
 
+// let marks = 35;
+// let pass = marks > 35 ? "Pass" : marks == 35 ? "Just pass" : "Fail";
+// console.log(pass);
+
+// let n1 = 10;
+// let n2 = 20;
+// let maximum = n1 > n2 ? n1 : n2;
+// console.log("Maximum number is =>", maximum);
+
+// for (let i = 5; i > 0; i--) {
+//     console.log(i)
+// }
 
 
+for (let i = 1; i <= 5; i++) {
+    console.log(i)
+}

@@ -735,6 +735,61 @@ console.log(`Food Price => ${foodPrice}`);
 
 
 
+// F] Ternary Operator Questions ---------------------------------------------------------------------------------------------?
+// Q=1 ------------------------------------------------------------------------------------?
+let number = 49;
+console.log(number % 7 == 0 ? "Divisible by 7" : "Not Divisible by 7");
+
+
+// Q=2 ------------------------------------------------------------------------------------?
+let temperature = 35;
+console.log(temperature >= 30 ? "Hot Day" : "Pleasant Day");
+
+
+// Q=3 --------------------------------------------------------------------------------?
+let string = ""
+console.log(string == "" ? "Empty String" : "String has content");
+
+
+// Q=4 --------------------------------------------------------------------------------?
+let age = 17;
+console.log(age < 13 ? "Child" : age <= 19 ? "Teenager" : "Adult");
+
+
+// Q=5 ---------------------------------------------------------------------------------?
+let a = 280;
+let b = 8957;
+let c = 489;
+console.log(a > b && a > c ? "1st number is greatest" : b > a && b > c ? "2st number is greatest." : "3st number is greatest.");
+
+
+// Q=6 -------------------------------------------------------------------------------?
+let marks = 95;
+console.log(marks >= 75 ? "Distinction" : marks >= 60 ? "First Class" : marks >= 50 ? "Second Class" : marks >= 35 ? "Pass" : "Fail");
+
+
+// Q=7 -----------------------------------------------------------------------------------?
+let number = -5;
+console.log(number % 2 == 0 ? number >= 0 ? number > 0 ? "Positive Even" : "Zero" : "Negative Even" : number%2 == 1 ? "Positive Odd" : "Negative Odd");
+
+
+// Q=8 -------------------------------------------------------------------------------?
+let year = 2025;
+console.log(year % 4 == 0 ? year % 100 != 0 || year % 400 == 0 ? "Leap Year" : "Not a Leap Year" : "Not a Leap Year");
+
+
+// Q=9 ------------------------------------------------------------------------------?
+let role = "admin";
+let action = "delete";
+console.log(role == "admin" ? action == "delete" ? "Admin Delete" : action == "edit" ? "Admin Edit" : "Admin Other" : role == "user" ? action == "View" ? "User View" : "User Restricted" : "Invalid Role");
+
+
+// Q=10 --------------------------------------------------------------------------------?
+let cartTotal = 1000;
+let discountPercentage;
+console.log(cartTotal >= 5000 ? discountPercentage = 20 : cartTotal >= 2000 ? discountPercentage = 10 : cartTotal >= 1000 ? discountPercentage = 5 : discountPercentage = 0);
+let finalPayableAmount = cartTotal - (cartTotal * discountPercentage /100);
+console.log(`The Final payable amount after adding a discount of ${discountPercentage}% is Rs. ${finalPayableAmount}`);
 
 
 

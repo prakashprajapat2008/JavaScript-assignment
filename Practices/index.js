@@ -172,3 +172,89 @@ console.log("" && "b");          // "" (first falsy)
 console.log(false && "x");       // false
 console.log("x" && false);       // false
 
+
+for (let i = 1; i <= 30; i++) {
+    if (i % 3 === 0 && i % 7 === 0) {
+        break;
+    }
+    console.log(i)
+}
+
+for (let i = 1; i<=15; i++){
+    if(i%3 == 0){
+        continue;
+    }
+    console.log(i)
+}
+
+for (let i = 1; i<=20; i++){
+    if(i%2 == 0){
+        continue;
+    }
+    console.log(i)
+}
+
+
+
+for (let i = 1; i <= 25; i++) {
+    if (Number.isInteger(Math.sqrt(i))) {
+        continue;
+    }
+    console.log(i);
+}
+
+
+
+
+for (let i = 5; i >= 1; i--) {
+  console.log(i);
+}
+
+let arr = [10, 20, 30, 40, 50];
+for (let i = arr.length - 1; i >= 0; i--) {
+  console.log(arr[i]);
+}
+
+
+
+for (let i = 80; i >= 8; i--) {
+    if(i%8 == 0){
+        console.log(i)
+    }
+}
+  
+let arr = [10, 20, 30, 40, 50];
+let bag = ""
+for (let i = arr.length - 1; i >= 0; i--) {
+    bag+= arr[i] +" "
+}
+ console.log(bag);
+
+let text = "CodingGita";
+let reversedText = "";
+for (let i = text.length - 1; i >= 0; i--) {
+    reversedText += text[i];
+}
+console.log(reversedText);
+
+let Total = 1;
+for (let i = 5; i >= 1 ; i--){
+    Total = Total*i
+}
+console.log(Total)
+
+
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    row = row + "* ";
+  }
+  console.log(row);
+}
+
+
+
+
+
+
+

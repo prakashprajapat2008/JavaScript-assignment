@@ -155,127 +155,135 @@ if (numberToCheck >=0) {
 
 //C] if...else if...else Statement  ----------------------------------------------------------------------------------------?
 // Q=1 ---------------------------------------------------------------?
-let month = Number(prompt("Enter a number: "));
-if (month==1 || month==2|| month==12){
-    console.log("winter")
-} else if (month==3 || month==4 || month==5){
-    console.log("summer")
-} else if (month==6 || month==7 || month==8){
+let month = 7;
+if (month == 12 || month == 1 || month == 2) {
+    console.log("Winter")
+} else if (month == 3 || month == 4 || month == 5) {
+    console.log("Summer")
+} else if (month == 6 || month == 7 || month == 8) {
     console.log("Monsoon")
-}else{
+} else if (month == 9 || month == 10 || month == 1) {
     console.log("Autumn")
-}
+};
 
 
 // Q=2 ---------------------------------------------------------------------?
-let income = Number(prompt("Enter a income: "));
-if (income<300000){
-    console.log("no text")
-}else if (income>=300000 && income<700000){
-    console.log("5% text")
-}else if (income>=700000 && income<1000000){
-    console.log("10% text")
-} else{
-    conasole.log("15% discount")
-}
+let income = 850000;
+if (0 <= income < 300000) {
+    taxOnIncome = 0
+} else if (income <= 70000) {
+    taxOnIncome = income * 5 /100
+} else if (income <= 1000000) {
+    taxOnIncome = income * 10 / 100
+} else {
+    taxOnIncome = income * 15 / 100
+};
+console.log(taxOnIncome);
 
 
 // Q=3 -----------------------------------------------------------------------?
-let score=Number(prompt("enter student score:-"))
-if (score>=90){
-    console.log("outstanding")
-} else if (score>=70 && score<=89){
-    console.log("good")
-} else if (score>=40 && score<=69){
+let marks = 100;
+if (100 >= marks >= 90) {
+    console.log("Outstanding")
+} else if (marks >= 70) {
+    console.log("Good")
+} else if (marks >= 40) {
     console.log("Average")
 } else {
-    console.log("Need inprovment")
-}
+    console.log("Needs Improvement")
+};
 
 
 // Q=4 ----------------------------------------------------------------?
-let speed=Number(prompt("enter the speed:-"))
-if (speed<40){
-    console.log("slow")
-} else if (speed>=40 && speed<=80){
+let speed = 1000;
+if (speed < 40) {
+    console.log("Slow")
+} else if (speed <= 80) {
     console.log("Normal")
-} else{
+} else {
     console.log("Fast")
-}
+};
 
 
 // Q=5 -----------------------------------------------------------------?
-let personHeight=Number(prompt("enter your height:-"))
-if (personHeight<150){
+let height = 140;
+if (height < 150) {
     console.log("Short")
-} else if (personHeight>=150 &&personHeight<=170){
+} else if (height <= 170) {
     console.log("Average")
-} else{
+} else {
     console.log("Tall")
-}
+};
 
 
 // Q=6 ---------------------------------------------------------------?
-let day=Number(prompt("enter the day:-"))
-if (day>=1 && day <=5){
-    console.log("weekday")
+let dayNumber = 4;
+if (5 >= dayNumber >= 1) {
+    console.log("Weekday")
 } else {
     console.log("Weekend")
-}
+};
 
 
 // Q=7 ----------------------------------------------------------------?
-let units = Number(prompt("Enter electricity units:"));
-let bill;
+let units = 1;
+let electricityBill = 0;
 if (units <= 50) {
-    bill = units * 2;
+    electricityBill = units * 2
 } else if (units <= 150) {
-    bill = units * 4;
+    electricityBill = units * 4
 } else {
-    bill = units * 6;
-}
-console.log("Total Electricity Bill: ₹" + bill);
+    electricityBill = units * 6
+};
+console.log(electricityBill);
+
 
 
 // Q=8 --------------------------------------------------------------------?
-let attendance = Number(prompt("Enter attendance percentage:"));
-if (attendance >= 90) {
-    console.log("Excellent");
-} else if (attendance >= 75) {
-    console.log("Good");
-} else if (attendance >= 50) {
-    console.log("Satisfactory");
+let attendancePercentage = 95;
+if (attendancePercentage >= 90) {
+    console.log("Excellent")
+} else if (attendancePercentage >= 75) {
+    console.log("Good")
+} else if (attendancePercentage >= 50) {
+    console.log("Satisfactory")
 } else {
-    console.log("Poor");
-}
+    console.log("Poor")
+};
+
 
 
 // Q=9 ----------------------------------------------------------------------?
-let mark1 = Number(prompt("Enter first subject mark:"));
-let mark2 = Number(prompt("Enter second subject mark:"));
-let mark3 = Number(prompt("Enter third subject mark:"));
-if (mark1 >= mark2 && mark1 >= mark3) {
-    console.log("Highest Mark: " + mark1);
-} else if (mark2 >= mark1 && mark2 >= mark3) {
-    console.log("Highest Mark: " + mark2);
+let marks1 = 100;
+let marks2 = 90;
+let marks3 = 95;
+if (marks1 > marks2 && marks1 > marks3) {
+    console.log("First marks is highest.")
+} else if (marks2 > marks1 && marks2 > marks3) {
+    console.log("Second marks is highest.")
 } else {
-    console.log("Highest Mark: " + mark3);
+    console.log("Third marks is highest.")
 }
 
 
 // Q=10 -------------------------------------------------------------------?
-let number = Number(prompt("Enter a number:"));
-if (number === 0) {
-    console.log("Zero");
-} else if (number > 0 && number % 2 === 0) {
-    console.log("Positive Even");
-} else if (number > 0 && number % 2 !== 0) {
-    console.log("Positive Odd");
-} else if (number < 0 && number % 2 === 0) {
-    console.log("Negative Even");
+let number = 13;
+if (number > 0) {
+    if (number % 2 == 0) {
+        console.log("Positive Even")
+    } else {
+        console.log("Positive Odd")
+    }
+} else if (number < 0) {
+    if (number % 2 == 0) {
+        console.log("Negative Even")
+    } else {
+        console.log("Negative Odd")
+    }
 } else {
-    console.log("Negative Odd");
+    console.log("Zero")
 }
+
 
 
 
@@ -283,119 +291,119 @@ if (number === 0) {
 
 //D. Nested if Statement  -------------------------------------------------------------------------------------------------?
 // Q=1 ---------------------------------------------------------------------------?
-let num1=Number(prompt("enter an number:-"))
-if (num1>10){
-    if(num1%3==0){
-        console.log("numner is greater tha 10 and divisible by 3")
+let number = 87;
+if (number > 10) {
+    if (number % 3 == 0) {
+        console.log("The number is greater than 10 and divisible by 3")
+    } else {
+        console.log("The number is greater than 10")
     }
+} else {
+    console.log("The number is not greater than 10")
 }
 
 
 // Q=2 ---------------------------------------------------------------------------?
-let age=Number(prompt("enter the age:-"))
-let voterId=true
-if (age>=18){
-    if (voterId==true){
-        console.log("can vote")
+let age = 20;
+let voterId = true;
+if (age >= 18) {
+    if (voterId) {
+        console.log("Can Vote")
     }
-
 }
 
 
 // Q=3 -------------------------------------------------------------------?
-let scoreMarkas=Number(prompt("enter score:-"))
-if (scoreMarkas>=40){
-    if (scoreMarkas>=80){
-        console.log("Passed with distinction")
+let marks = 90;
+if (marks >= 40) {
+    if (marks >= 80) {
+        console.log("Passed with Distinction")
     }
-}
+};
 
 
 // Q=4 ----------------------------------------------------------------?
-let pin=Number(prompt("enter your pin"))
-let accountBalance=1213111;
-if (pin==1213){
-    if (accountBalance>0){
-        console.log("can withdrawl")
+let pin = 1234;
+let hasSufficientBalance = false;
+let userPin = 1234
+if (pin == userPin) {
+    if (hasSufficientBalance) {
+        console.log("PIN is correct and balance is sufficient")
     }
 }
 
 
 // Q=5 ---------------------------------------------------------------?
-let year=Number(prompt("enter year:-"))
-if (year%4==0){
-    if (year%100==0){
-        console.log("leap year")
+let year = 2026;
+if (year % 4 == 0) {
+    if (year % 100 == 0) {
+        if (year % 400 == 0) {
+            console.log("Leap Year!")
+        }
     }
-}
+};
 
 
 // Q=6 -----------------------------------------------------------------?
-
-
-
-
-
-
-
-
-
-
-
-
+let email = "prakash.prajapat.cg@gmail.com"
+if (email.includes("@")) {
+    if (email.endsWith(".com")) {
+        if ( email.length > 10) {
+            console.log("Valid Email")
+        }
+    }
+};
 
 
 
 // Q=7 -------------------------------------------------------------------------?
-let cartTotal = Number(prompt("Enter cart total:"));
-let isPremium = prompt("Are you a premium member? (yes/no)");
+let cartTotal = 1200;
+let isPremiumMember = true;
 if (cartTotal >= 1000) {
-    if (isPremium === "yes") {
-        cartTotal = cartTotal - (cartTotal * 20 / 100);
+    if (isPremiumMember) {
+        let finalAmount = cartTotal * 20 / 100
     } else {
-        cartTotal = cartTotal - (cartTotal * 10 / 100);
+        let finalAmount = cartTotal * 10 / 100
     }
-}
-console.log("Final Amount: ₹" + cartTotal);
+};
+console.log(finalAmount);
 
 
 // Q=8 ---------------------------------------------------------------------?
-let number = Number(prompt("Enter a number:"));
+let number = 44;
 if (number > 0) {
-    if (number % 2 === 0) {
-        if (number % 4 === 0) {
-            console.log("Positive Even and Divisible by 4");
+    if (number % 2 == 0) {
+        if (number % 4 == 0) {
+            console.log("Positive Even and Divisible by 4")
         }
     }
-}
+};
 
 
 // Q=9 ---------------------------------------------------------------------------?
-let age = Number(prompt("Enter your age:"));
-let hasDegree = prompt("Do you have a graduation degree? (yes/no)");
-let experience = Number(prompt("Enter your years of experience:"));
-
-if (age >= 21 && age <= 30) {
-    if (hasDegree === "yes") {
+let age = 16;
+let hasGraduationDegree = true;
+let experience = 3;
+if (21 <= age <= 30) {
+    if (hasGraduationDegree) {
         if (experience >= 2) {
-            console.log("Eligible for Interview");
+            console.log("Eligible for Interview")
         }
     }
-}
+};
 
 
 // Q=10 -----------------------------------------------------------------------------?
-let present = prompt("Is the student present? (yes/no)");
-let internalMarks = Number(prompt("Enter internal marks:"));
-let externalMarks = Number(prompt("Enter external marks:"));
-
-if (present === "yes") {
+let isStudentPresent = true;
+let internalMarks = 90;
+let externalMarks = 90;
+if (isStudentPresent) {
     if (internalMarks >= 30) {
         if (externalMarks >= 35) {
-            console.log("Eligible for Final Exam");
+            console.log("Eligible for Final Exam")
         }
     }
-}
+};
 
 
 
@@ -636,7 +644,7 @@ switch (true) {
 
 // Q=10 ----------------------------------------------------------------------?
 let Category = "veg";
-let Item = "pav";
+let Item = "pasta";
 let Size = "half";
 let foodPrice;
 switch (Category) {
@@ -645,33 +653,33 @@ switch (Category) {
             case "Pasta":
                 switch (Size) {
                     case "full":
-                        foodPrice = 999;
+                        foodPrice = 899;
                         break;
 
                     case "half":
-                        foodPrice = 599;
+                        foodPrice = 499;
                         break;
                 }
                 break;
             case "paneer":
                 switch (Size) {
                     case "full":
-                        foodPrice = 999;
+                        foodPrice = 899;
                         break;
 
                     case "half":
-                        foodPrice = 599;
+                        foodPrice = 499;
                         break;
                 }
                 break;
-            case "pav":
+            case "pasta":
                 switch (Size) {
                     case "full":
-                        foodPrice = 999;
+                        foodPrice = 899;
                         break;
 
                     case "half":
-                        foodPrice = 599;
+                        foodPrice = 499;
                         break;
                 }
                 break;
@@ -684,33 +692,33 @@ switch (Category) {
             case "item1":
                 switch (Size) {
                     case "full":
-                        foodPrice = 999;
+                        foodPrice = 899;
                         break;
 
                     case "half":
-                        foodPrice = 599;
+                        foodPrice = 499;
                         break;
                 }
                 break;
             case "item2":
                 switch (Size) {
                     case "full":
-                        foodPrice = 999;
+                        foodPrice = 899;
                         break;
 
                     case "half":
-                        foodPrice = 599;
+                        foodPrice = 499;
                         break;
                 }
                 break;
             case "item3":
                 switch (Size) {
                     case "full":
-                        foodPrice = 999;
+                        foodPrice = 899;
                         break;
 
                     case "half":
-                        foodPrice = 599;
+                        foodPrice = 499;
                         break;
                 }
                 break;
@@ -727,6 +735,61 @@ console.log(`Food Price => ${foodPrice}`);
 
 
 
+// F] Ternary Operator Questions ---------------------------------------------------------------------------------------------?
+// Q=1 ------------------------------------------------------------------------------------?
+let number = 49;
+console.log(number % 7 == 0 ? "Divisible by 7" : "Not Divisible by 7");
+
+
+// Q=2 ------------------------------------------------------------------------------------?
+let temperature = 35;
+console.log(temperature >= 30 ? "Hot Day" : "Pleasant Day");
+
+
+// Q=3 --------------------------------------------------------------------------------?
+let string = ""
+console.log(string == "" ? "Empty String" : "String has content");
+
+
+// Q=4 --------------------------------------------------------------------------------?
+let age = 17;
+console.log(age < 13 ? "Child" : age <= 19 ? "Teenager" : "Adult");
+
+
+// Q=5 ---------------------------------------------------------------------------------?
+let a = 280;
+let b = 8957;
+let c = 489;
+console.log(a > b && a > c ? "1st number is greatest" : b > a && b > c ? "2st number is greatest." : "3st number is greatest.");
+
+
+// Q=6 -------------------------------------------------------------------------------?
+let marks = 95;
+console.log(marks >= 75 ? "Distinction" : marks >= 60 ? "First Class" : marks >= 50 ? "Second Class" : marks >= 35 ? "Pass" : "Fail");
+
+
+// Q=7 -----------------------------------------------------------------------------------?
+let number = -5;
+console.log(number % 2 == 0 ? number >= 0 ? number > 0 ? "Positive Even" : "Zero" : "Negative Even" : number%2 == 1 ? "Positive Odd" : "Negative Odd");
+
+
+// Q=8 -------------------------------------------------------------------------------?
+let year = 2025;
+console.log(year % 4 == 0 ? year % 100 != 0 || year % 400 == 0 ? "Leap Year" : "Not a Leap Year" : "Not a Leap Year");
+
+
+// Q=9 ------------------------------------------------------------------------------?
+let role = "admin";
+let action = "delete";
+console.log(role == "admin" ? action == "delete" ? "Admin Delete" : action == "edit" ? "Admin Edit" : "Admin Other" : role == "user" ? action == "View" ? "User View" : "User Restricted" : "Invalid Role");
+
+
+// Q=10 --------------------------------------------------------------------------------?
+let cartTotal = 1000;
+let discountPercentage;
+console.log(cartTotal >= 5000 ? discountPercentage = 20 : cartTotal >= 2000 ? discountPercentage = 10 : cartTotal >= 1000 ? discountPercentage = 5 : discountPercentage = 0);
+let finalPayableAmount = cartTotal - (cartTotal * discountPercentage /100);
+console.log(`The Final payable amount after adding a discount of ${discountPercentage}% is Rs. ${finalPayableAmount}`);
 
 
 

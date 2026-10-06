@@ -253,6 +253,7 @@ for (let i = 1; i <= 5; i++) {
 }
 
 
+<<<<<<< HEAD
 for (let i = 1; i <= 5; i++) {
   let row = "";
   for (let j = 1; j <= 5; j++) {
@@ -313,6 +314,162 @@ for (let i = 1; i <= 3; i++) {
   }
 }
 console.log(row);
+=======
+<<<<<<< HEAD
+
+// let number = 7;
+// if (number % 2 === 0) {
+//   console.log("The Number is =>","Even");
+// } else {
+//   console.log("The Number is =>","Odd");
+// }
+
+// let score = 28;
+// if (score >= 35) {
+//   console.log("Passed");
+// } else {
+//   console.log("Failed");
+// }
+
+// let score = 28;
+// if (score >= 0) {
+//   console.log("The Number is =>","+ve");
+// } else {
+//   console.log("The Number is =>","-ve");
+// }
+
+
+// let year = 2016;
+// if (year % 4 == 0) {
+//   console.log("The Year is =>","Leap Year");
+// } else {
+//   console.log("The Year is =>","Not Leap Year");
+// }
+
+// let ch = 'a';
+// if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+//   console.log(`The vowel is => ${ch} `);
+// } else {
+//   console.log(`The Consonant is => ${ch}`);
+// }
+
+
+
+// if(C1){
+
+// }else if(C2){
+
+// }else{
+
+// };
+
+
+// let marks = 78;
+// if (marks >= 90) {
+//   console.log("Grade A");
+// } else if (marks >= 75) {
+//   console.log("Grade B");
+// } else if (marks >= 50) {
+//   console.log("Grade C");
+// } else {
+//   console.log("Grade F");
+// // }
+
+// let N = 20;
+// if(N>0){
+//     console.log("+ve");
+// }else if(N==0){
+//     console.log("Zero");
+// }else{
+//     console.log("-ve");
+// };
+
+
+// let hour = 14;
+// if (hour < 12) {
+//   console.log("Good Morning");
+// } else if (hour < 17) {
+//   console.log("Good Afternoon");
+// } else {
+//   console.log("Good Evening");
+// }
+
+
+// let age = 60;
+// if (age <= 12) {
+// 	console.log("Ticket price: ₹100");
+// } else if (age <= 59) {
+// 	console.log("Ticket price: ₹200");
+// } else {
+// 	console.log("Ticket price: ₹150");
+// }
+
+
+// let Tem = 10;
+// if(Tem < 15){
+//     console.log("Cold");
+// } else if(Tem <= 25){
+//     console.log("Pleasant");
+// } else{
+//     console.log("Hot");
+// }
+
+// let N1 = 10;
+// let N2 = 25;
+// let N3 = 18;
+// if(N1 >= N2 && N1 >= N3){
+// 	console.log("Largest number =>", N1);
+// } else if (N2 >= N1 && N2 >= N3) {
+// 	console.log("Largest number =>", N2);
+// } else {
+// 	console.log("Largest number =>", N3);
+// }
+
+
+// if (condition1) {
+//   if (condition2) {
+//     // code
+//   }
+// }
+
+
+// let num = 10;
+// if (num > 0) {
+//   if (num % 2 == 0) {
+//     console.log("Positive Even Number");
+//   }
+// }
+
+
+// let username = "Prakash";
+// let password = "dddppp";
+// if (username === "Prakash") {
+//   if (password === "dddppp") {
+//     console.log("Login Successful");
+//   } else {
+//     console.log("Wrong Password");
+//   }
+// }
+
+
+// let N = 20;
+// if(N>0){
+//     if(N%5 == 0){
+//         console.log(" number is positive and divisible by 5")
+//     }
+// }
+
+
+// let Marks = 30;
+// if(Marks>=35){
+//     console.log("Pass");
+//     if(Marks>=90){
+//         console.log("excellent")
+//     }else{
+//         console.log("Fail")
+//     }
+// }
+>>>>>>> 0fdb4d6bc3fb79d6259af467c27a02b0d3a093db
 
 
 
@@ -324,7 +481,22 @@ for (let i = 1; i <= 4; i++) {
   console.log(row);
 }
 
+// let day = 2;
+// switch (day) {
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   default:
+//     console.log("Invalid day");
+// }
 
+<<<<<<< HEAD
 for(let i = 1; i<=10; i++){
   let row = ""
   for(let j = 1; j<=10; j++){
@@ -350,3 +522,139 @@ for (let i = 1; i <= 3; i++) {
 }
 console.log(row);
 
+=======
+
+
+// let operator = "+";
+// let a = 20;
+// let b = 5;
+// switch (operator) {
+//   case "+":
+//     console.log(a + b);
+//     break;
+//   case "-":
+//     console.log(a - b);
+//     break;
+//   case "*":
+//     console.log(a * b);
+//     break;
+//   case "/":
+//     console.log(a / b);
+//     break;
+//   default:
+//     console.log("Invalid operator");
+// }
+
+
+
+// let month = 7;
+// switch (month) {
+// 	case 1:
+// 		console.log("January");
+// 		break;
+// 	case 2:
+// 		console.log("February");
+// 		break;
+// 	case 3:
+// 		console.log("March");
+// 		break;
+// 	case 4:
+// 		console.log("April");
+// 		break;
+// 	case 5:
+// 		console.log("May");
+// 		break;
+// 	case 6:
+// 		console.log("June");
+// 		break;
+// 	case 7:
+// 		console.log("July");
+// 		break;
+// 	case 8:
+// 		console.log("August");
+// 		break;
+// 	case 9:
+// 		console.log("September");
+// 		break;
+// 	case 10:
+// 		console.log("October");
+// 		break;
+// 	case 11:
+// 		console.log("November");
+// 		break;
+// 	case 12:
+// 		console.log("December");
+// 		break;
+// 	default:
+// 		console.log("Invalid month number");
+// }
+
+
+// let grade = "B";
+// switch (grade) {
+// 	case "A":
+// 		console.log("Excellent");
+// 		break;
+// 	case "B":
+// 		console.log("Very good");
+// 		break;
+// 	case "C":
+// 		console.log("Good");
+// 		break;
+// 	case "D":
+// 		console.log("Pass");
+// 		break;
+// 	case "F":
+// 		console.log("Fail");
+// 		break;
+// 	default:
+// 		console.log("Invalid grade");
+// }
+
+
+// let Simple = 2;
+// switch (Simple) {
+// 	case 1:
+// 		console.log("Pizza");
+// 		break;
+// 	case 2:
+// 		console.log("Burger");
+// 		break;
+// 	case 3:
+// 		console.log("Pasta");
+// 		break;
+// 	default:
+// 		console.log("Other");
+// }
+
+
+// let num = 7;
+// let result = num % 2 === 0 ? "Even" : "Odd";
+// console.log(result);
+
+// let number = 0;
+// let sign = number > 0 ? "Positive" : number < 0 ? "Negative" : "Zero";
+// console.log(`${number} is => ${sign}`);
+=======
+>>>>>>> 9e2c7b05b2a0533ff7927a18af9c8a6b46e5765f
+
+
+
+// let marks = 35;
+// let pass = marks > 35 ? "Pass" : marks == 35 ? "Just pass" : "Fail";
+// console.log(pass);
+
+// let n1 = 10;
+// let n2 = 20;
+// let maximum = n1 > n2 ? n1 : n2;
+// console.log("Maximum number is =>", maximum);
+
+// for (let i = 5; i > 0; i--) {
+//     console.log(i)
+// }
+
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i)
+}
+>>>>>>> 0fdb4d6bc3fb79d6259af467c27a02b0d3a093db

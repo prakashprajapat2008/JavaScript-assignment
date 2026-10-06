@@ -253,8 +253,100 @@ for (let i = 1; i <= 5; i++) {
 }
 
 
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= 5; j++) {
+    row = row + "* ";
+  }
+  console.log(row);
+}
+
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    row = row + "* ";
+  }
+  console.log(row);
+}
+
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= 5; j++) {
+    row = row + i + " ";
+  }
+  console.log(row);
+}
+
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    row = row + i + " ";
+  }
+  console.log(row);
+}
+
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    row = row + j + " ";
+  }
+  console.log(row);
+}
+
+
+let num = 1;
+for (let i = 1; i <= 3; i++) {
+  let row = "";
+  for (let j = 1; j <= 3; j++) {
+    row += num + " ";
+    num++;
+  }
+  console.log(row);
+}
+
+let num = 1;
+let row = "";
+for (let i = 1; i <= 3; i++) {
+  for (let j = 1; j <= 3; j++) {
+    row += num + " ";
+    num++;
+  }
+}
+console.log(row);
 
 
 
+for (let i = 1; i <= 4; i++) {
+  let row = "";
+  for (let j = 1; j <= 4; j++) {
+    row += (i * j) + " ";
+  }
+  console.log(row);
+}
 
+
+for(let i = 1; i<=10; i++){
+  let row = ""
+  for(let j = 1; j<=10; j++){
+    row += (i*j)+ " ";
+  }
+  console.log(row)
+}
+
+for (let i = 1; i <= 3; i++) {
+  let row = "";
+  for (let j = 1; j <= 3; j++) {
+    row += (i * 3 - (j - 1)) + " ";
+  }
+  console.log(row);
+}
+
+
+ let row = "";
+for (let i = 1; i <= 3; i++) {
+  for (let j = 1; j <= 3; j++) {
+    row += (i * 3 - (j - 1)) + " ";
+  }
+}
+console.log(row);
 

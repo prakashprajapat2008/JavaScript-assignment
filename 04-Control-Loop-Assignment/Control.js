@@ -345,8 +345,7 @@ for (let i = 40; i >= 1; i--) {
 
 
 
-// Part I-a] break inside a for Loop ---------------------------------------?
-
+// Part I-d] Nested For Loop Questions ---------------------------------------?
 
 
 

@@ -166,6 +166,7 @@ console.log("Binary =>", binary);
  }
 
 
+ 
 // Q=5 ------------------------------------------------------------------------?
 for (let i = 1; i <= 50; i++) {
     if (i>=20 && Number.isInteger(Math.sqrt(i))){

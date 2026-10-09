@@ -283,22 +283,37 @@ console.log("The String =>", bag);
 
 
 Q=5 --------------------------------------------------------------------------?
+let arr=[0,1];
+let prev = 1;
+let prevToPrev=0
+for(let i=2;i<15;i++){
+    let fib_num = arr[prev]+arr[prevToPrev];
+    arr.push(fib_num);
+    prev+=1;
+    prevToPrev+=1;
+}
+console.log(arr)
+
+let arr = [0, 1];
+for (let i = 2; i < 15; i++) {
+    let fib_num = arr[i - 1] + arr[i - 2];
+    arr.push(fib_num);
+}
+console.log(arr);
 
 
-
-
-
-Q=6 -----------------------------------------------------------------------------?
-
-
-
-
-
-
-
-
-
-
+// Q=6 -----------------------------------------------------------------------------?
+let string = "NAMAN";
+let original = string;
+let reverse = "";
+for (let i = string.length - 1; i >= 0; i--) {
+    reverse += string[i];
+}
+if (original == reverse) {
+    console.log("Palindrome");
+} else {
+    console.log("Not Palindrome");
+}
 
 
 // Q=7 ---------------------------------------------------------------------------?
@@ -450,8 +465,6 @@ for (let i = 1; i <= 5; i++) {
     }
     console.log(row);
 }
-
-
 
 
 

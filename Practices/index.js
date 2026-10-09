@@ -350,3 +350,140 @@
 // }
 // console.log(row);
 
+
+// for(let i = 1; i<=5; i++){
+//     let bag = ""
+//     for(let j = 1; j<=5; j++){
+//         bag += "* "
+//     }
+//     console.log(bag)
+// }
+
+
+// for(let i = 1; i<=5; i++){
+//     let bag = ""
+//     for(let j = 1; j<=i; j++){
+//         bag += "* "
+//     }
+//     console.log(bag)
+// }
+
+
+
+// for(let i = 1; i<=5; i++){
+//     let bag = ""
+//     for(let j = 1; j<=i; j++){
+//         bag += j + " "
+//     }
+//     console.log(bag)
+// }
+
+// let num = 1;
+// for (let i = 1; i <= 4; i++) {
+//     let row = "";
+//     for (let j = 1; j <= i; j++) {
+//         row += num + " ";
+//         num++;
+//     }
+//     console.log(row);
+// }
+
+
+// for (let i = 1; i <= 5; i++) {
+//     let row = "";
+//     for (let j = 1; j <= i; j++) {
+//         if (j == 1 || j == i || i == 5) {
+//             row += "* ";
+//         } else {
+//             row += "  ";
+//         }
+//     }
+//     console.log(row);
+// }
+
+
+// for(let i = 5; i>=1; i--){
+//     let bag = ""
+//     for(let j = 1; j<=i; j++){
+//         bag += "* "
+//     }
+//     console.log(bag)
+// }
+
+// for(let i = 5; i>=1; i--){
+//     let bag = ""
+//     for(let j = 1; j<=i; j++){
+//         bag += i + " "
+//     }
+//     console.log(bag)
+// }
+
+
+// for(let i = 5; i>=1; i--){
+//     let bag = ""
+//     for(let j = 1; j<=i; j++){
+//         bag +=  j+ " "
+//     }
+//     console.log(bag)
+// }
+
+
+
+// for(let i = 1; i<=5; i++){
+//     let bag = ""
+//     for(let j = 1; j<=i; j++){
+//         bag += j + " "
+//     }
+//     console.log(bag)
+// }
+
+
+
+// for(let i = 5; i>=1; i--){
+//     let bag = ""
+//     for(let j = 1; j<=i; j++){
+//         bag += j + " "
+//     }
+//     console.log(bag)
+// }
+
+// let num = 1;
+// for (let i = 5; i >= 1; i--) {
+//     let row = "";
+//     for (let j = 1; j <= i; j++) {
+//         row += num + j+ "  ";
+//         num++;
+//     }
+//     console.log(row);
+// }
+
+
+
+
+// let matrix = [[10,20,30], [40,50,60], [70,80,90]];
+// console.log(matrix[2][0])
+
+
+// let matrix = [[10,20,30], [40,50,60], [70,80,90]];
+// console.log(matrix[2][2])
+
+// 0,1,1,2,3,5,8,...
+
+// let arr=[0,1];
+// let prev = 1;
+// let prevToPrev=0
+// for(let i=2;i<15;i++){
+//     let fib_num = arr[prev]+arr[prevToPrev];
+//     arr.push(fib_num);
+//     prev+=1;
+//     prevToPrev+=1;
+// }
+// console.log(arr)
+
+
+
+
+
+
+
+

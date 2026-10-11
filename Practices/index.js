@@ -486,4 +486,57 @@ console.log(arr)
 
 
 
+while (condition) {
+  // code
+  // update the condition (very important!)
+}
+
+
+let count = 5;
+while (count > 0) {
+  console.log(count);
+  count--;
+}
+
+let sum = 0;
+let i = 1;
+while (i <= 10) {
+  sum = sum + i;
+  i++;
+}
+console.log("Sum is => " + sum);
+
+
+
+let i = 1;
+while (i <= 4) {
+  console.log(i);
+  i++;
+}
+
+let i = 4;
+while (i >= 1) {
+  console.log(i);
+  i--;
+}
+
+
+let num = 1234;
+let reverse = 0;
+while (num > 0) {
+    let lastdigit = num % 10;
+    reverse = reverse * 10 + lastdigit;
+    num = Math.floor(num / 10);
+}
+console.log(reverse);
+
+
+
+
+
+
+
+
+
+
 

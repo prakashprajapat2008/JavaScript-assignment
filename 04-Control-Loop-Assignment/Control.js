@@ -549,3 +549,111 @@ for (let i = n - 1; i >= 1; i--) {
 
 
 
+
+
+
+
+
+// Part II: While Loop --------------------------------------------------------------------------------------------------------?
+// Q=1 -----------------------------------------------------------------------------------?
+let i = 1;
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+
+
+// Q=2 --------------------------------------------------------------------------------?
+let i = 1;
+let sum = 0;
+while (i <= 10) {
+    sum = sum + i;
+    i++;
+}
+console.log("The Total Number =>", sum);
+
+
+// Q=3 -------------------------------------------------------------------------------?
+let num = 5;
+let i = 1;
+while (i <= 10) {
+    console.log(num + " x " + i + " => " + (num * i));
+    i++;
+}
+
+
+// Q=4 --------------------------------------------------------------------------------?
+let num = 58372;
+let count = 0;
+while (num > 0) {
+    count++;
+    num = Math.floor(num / 10);
+}
+console.log("The Total Number =>", count); 
+
+
+// Q=5 ---------------------------------------------------------------------------------?
+let num = 12345;
+let reverse = 0;
+while (num > 0) {
+    let digit = num % 10;
+    reverse = reverse * 10 + digit;
+    num = Math.floor(num / 10);
+}
+console.log("The Number is Reverse =>", reverse);
+
+
+// Q=6 -------------------------------------------------------------------------?
+let num = 4729;
+let sum = 0;
+while (num > 0) {
+    let digit = num % 10;
+    sum = sum + digit;
+    num = Math.floor(num / 10);
+}
+console.log("The Total Number =>", sum);
+
+
+// Q=7 -------------------------------------------------------------------------?
+let i = 1;
+while (i <= 100) {
+    if (i % 3 == 0 && i % 5 == 0 && i % 7 != 0) {
+        console.log(i);
+    }
+    i++;
+}
+
+
+// Q=8 ---------------------------------------------------------------------?
+let num = 5;
+let factorial = 1;
+let i = 1;
+while (i <= num) {
+    factorial = factorial * i;
+    i++;
+}
+console.log("The Total factorial =>", factorial);
+
+
+// Q=9 -----------------------------------------------------------------?
+let num = 121;
+let original = num;
+let reverse = 0;
+while (num > 0) {
+    let digit = num % 10;
+    reverse = reverse * 10 + digit;
+    num = Math.floor(num / 10);
+}
+if (original == reverse) {
+    console.log("Palindrome number");
+} else {
+    console.log("Not a palindrome number");
+}
+
+
+// Q=10 -------------------------------------------------------------?
+
+
+
+
+

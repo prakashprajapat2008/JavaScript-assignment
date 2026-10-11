@@ -674,16 +674,46 @@ do {
 } while (i >= 1);
 
 
+// Q=2 -----------------------------------------------------------------?
+let i = 2;
+do {
+    console.log(i);
+    i += 2;
+} while (i <= 20);
 
 
+// Q=3 -----------------------------------------------------------------?
+let n = 5;
+let i = 1;
+let sum = 0;
+do {
+    sum = sum + i;
+    i++;
+} while (i <= n);
+console.log("The Total Number =>", sum); 
 
 
+// Q=4 --------------------------------------------------------------?
+let num = 234;
+let product = 1;
+do {
+    let digit = num % 10;
+    product = product * digit;
+    num = Math.floor(num / 10);
+} while (num > 0);
+console.log("The Total Number Product =>", product);
 
 
+// Q=5 ---------------------------------------------------------------?
+let num = 58372;
+do {
+    if (num < 10) {
+        break;
+    }
+    num = Math.floor(num / 10);
+} while (num > 0);
+console.log("The Number is =>", num); 
 
 
-
-
-
-
+// Q=6 --------------------------------------------------------------?
 

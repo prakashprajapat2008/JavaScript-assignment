@@ -693,15 +693,15 @@ do {
 console.log("The Total Number =>", sum); 
 
 
-// Q=4 --------------------------------------------------------------?
-let num = 234;
-let product = 1;
-do {
-    let digit = num % 10;
-    product = product * digit;
-    num = Math.floor(num / 10);
-} while (num > 0);
-console.log("The Total Number Product =>", product);
+// // Q=4 --------------------------------------------------------------?
+// let num = 234;
+// let product = 1;
+// do {
+//     let digit = num % 10;
+//     product = product * digit;
+//     num = Math.floor(num / 10);
+// } while (num > 0);
+// console.log("The Total Number Product =>", product);
 
 
 // Q=5 ---------------------------------------------------------------?
@@ -715,19 +715,19 @@ do {
 console.log("The Number is =>", num); 
 
 
-// Q=6 --------------------------------------------------------------?
-let base = 3;
-let exponent = 4;
-let result = 1;
-let i = 0;
-do {
-    if (i >= exponent) {
-        break;
-    }
-    result = result * base;
-    i++;
-} while (true);
-console.log("The Number is =>", result);
+// // Q=6 --------------------------------------------------------------?
+// let base = 3;
+// let exponent = 4;
+// let result = 1;
+// let i = 0;
+// do {
+//     if (i >= exponent) {
+//         break;
+//     }
+//     result = result * base;
+//     i++;
+// } while (true);
+// console.log("The Number is =>", result);
 
 
 // Q=7 ----------------------------------------------------------------?
@@ -740,20 +740,51 @@ do {
 } while (i <= 100);
 
 
-// Q=8 -------------------------------------------------------------------?
-let num = 1221;
-let original = num;
-let reverse = 0;
+// // Q=8 -------------------------------------------------------------------?
+// let num = 1221;
+// let original = num;
+// let reverse = 0;
+// do {
+//     let digit = num % 10;
+//     reverse = reverse * 10 + digit;
+//     num = Math.floor(num / 10);
+// } while (num > 0);
+// if (original === reverse) {
+//     console.log("Palindrome number");
+// } else {
+//     console.log("Not a palindrome number");
+// }
+
+
+// Q=9 ---------------------------------------------------------------------?
+let a = 48;
+let b = 18;
+let divisor;
 do {
-    let digit = num % 10;
-    reverse = reverse * 10 + digit;
-    num = Math.floor(num / 10);
-} while (num > 0);
-if (original === reverse) {
-    console.log("Palindrome number");
+    divisor = a % b;
+    a = b;
+    b = divisor;
+} while (b != 0);
+
+console.log("The Number is =>", a);
+
+
+// Q=10 -------------------------------------------------------------------?
+let num = 13;
+let binary = "";
+if (num == 0) {
+    binary = "0";
 } else {
-    console.log("Not a palindrome number");
+    do {
+        let conversion = num % 2;
+        binary = conversion + binary;
+        num = Math.floor(num / 2);
+    } while (num > 0);
 }
+console.log("The Number is =>", binary); 
+
+
+
 
 
 

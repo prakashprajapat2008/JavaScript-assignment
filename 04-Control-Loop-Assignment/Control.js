@@ -716,4 +716,48 @@ console.log("The Number is =>", num);
 
 
 // Q=6 --------------------------------------------------------------?
+let base = 3;
+let exponent = 4;
+let result = 1;
+let i = 0;
+do {
+    if (i >= exponent) {
+        break;
+    }
+    result = result * base;
+    i++;
+} while (true);
+console.log("The Number is =>", result);
+
+
+// Q=7 ----------------------------------------------------------------?
+let i = 1;
+do {
+    if (i % 4 == 0 && i % 8 != 0) {
+        console.log(i);
+    }
+    i++;
+} while (i <= 100);
+
+
+// Q=8 -------------------------------------------------------------------?
+let num = 1221;
+let original = num;
+let reverse = 0;
+do {
+    let digit = num % 10;
+    reverse = reverse * 10 + digit;
+    num = Math.floor(num / 10);
+} while (num > 0);
+if (original === reverse) {
+    console.log("Palindrome number");
+} else {
+    console.log("Not a palindrome number");
+}
+
+
+
+
+
+
 

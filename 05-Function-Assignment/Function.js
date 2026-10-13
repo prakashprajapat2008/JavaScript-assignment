@@ -1,6 +1,10 @@
 // Assignment: JS Functions ----------------------------------------------------------------------------------------------------------?
 // Q=1 -----------------------------------------------------------------------------------?
-
+// Four Advantages of Functions:
+// 1. Code Reusability =>  A function can be used multiple times without rewriting the same code.
+// 2. Code Readability => Functions make code easier to read and understand.
+// 3. Code Organization => Functions divide a large program into smaller, manageable parts.
+// 4. Easy Debugging => Functions make it easier to find and fix errors in a program.
 
 
 // Q=2 -----------------------------------------------------------------------------------?

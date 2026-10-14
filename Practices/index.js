@@ -660,5 +660,3 @@ function printCourse() {
 printCourse();
 
 
-
-cd ..ACTemperature

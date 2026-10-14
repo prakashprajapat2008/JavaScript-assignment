@@ -97,14 +97,14 @@ const course = "JavaScript";
 function displayCourse() {
     console.log("Course => ", course);
 }
-// displayCourse();
+displayCourse();
 
 
 // Q=12 Combining Multiple Concepts---------------------------------------------------------?
 function analyzeStudent(name, m1, m2, m3) {
     let total = m1 + m2 + m3;
     let average = total / 3;
-    return `${name} scored total ${total} with average => ${average}`;
+    return `${name} scored total ${total} with average ${average}`;
 }
 console.log(analyzeStudent("Prakash", 85, 90, 88));
 console.log(analyzeStudent("Dev", 72, 80, 76));
@@ -125,7 +125,7 @@ function generateReport(name, m1, m2, m3) {
     let total = m1 + m2 + m3;
     let average = total / 3;
     let result = average >= 40 ? "Pass" : "Fail";
-    return `Student Name => ${name}Total Marks => ${total} Average => ${average.toFixed(2)} Result => ${result}`;
+    return `Student: ${name}\nTotal marks: ${total}\nAverage: ${average.toFixed(2)}\nResult: ${result}`;
 }
 console.log(generateReport("Prakash", 80, 75, 90));
 console.log(generateReport("Dev", 30, 35, 25));
@@ -151,17 +151,15 @@ console.log("Full name => ", fullName("Prakash", "Prajapat"));
 
 
 // Q=16 Practical - Grade Calculator--------------------------------------------------------?
-const calculateGrade = function calculateGrade(percentage) {
-    if (percentage >= 90) return "A+";
-    if (percentage >= 80) return "A";
-    if (percentage >= 70) return "B";
-    if (percentage >= 60) return "C";
-    if (percentage >= 40) return "D";
-    return "F";
+let calculateGrade = function calculateGrade(percentage) {
+     let result = percentage>=90?"A+":percentage>=80?"A":percentage>=70?"B":percentage>=60?"C":percentage>=40?"D":"F";
+    return result
 };
-[95, 82, 67, 45, 32].forEach((percentage) => {
-    console.log(`${percentage}% =>  ${calculateGrade(percentage)}`);
-});
+console.log(calculateGrade(95))
+console.log(calculateGrade(82))
+console.log(calculateGrade(67))
+console.log(calculateGrade(45))
+console.log(calculateGrade(32))
 
 
 // Q=17 Practical - Shopping Discount-----------------------------------------------------?
@@ -173,25 +171,32 @@ console.log("price => ", calculateFinalPrice(1200, 10));
 
 
 // Q=18 Practical - Temperature Converter------------------------------------------------?
-const celsiusToFahrenheit = function (c) {
+function celsiusToFahrenheit(c) {
     return (c * 9 / 5) + 32;
 };
-const fahrenheitToCelsius = function (f) {
+function fahrenheitToCelsius(f) {
     return (f - 32) * 5 / 9;
 };
-console.log(celsiusToFahrenheit(0));
-console.log(celsiusToFahrenheit(100));
-console.log(fahrenheitToCelsius(32));
+console.log(celsiusToFahrenheit(30));
+console.log(celsiusToFahrenheit(25));
+console.log(fahrenheitToCelsius(100));
 console.log(fahrenheitToCelsius(212));
 
-// Q=19 Mixed Advanced Question------------------------------------------------------?
-function createGreeting(name) {
-    function formatGreeting() {
-        return `Hello, ${name}`;
+
+// // Q=19 Mixed Advanced Question------------------------------------------------------?
+let greet = function() {
+    console.log("Hello Prakash");
+};
+greet() 
+
+function calculateTotal(price, quantity) {
+    function getTotal() {
+        return price * quantity;
     }
-    return formatGreeting();
+    return getTotal();
 }
-console.log(createGreeting("Prakash"));
+let result = calculateTotal(50, 3);
+console.log("Total Price => ", result);
 
 
 // Q=20 Challenge Question - Combining Everything-------------------------------------?
@@ -205,10 +210,15 @@ function processStudent(name, m1, m2, m3) {
     return `Student => ${name}\nTotal marks => ${total}\nAverage => ${average.toFixed(2)}\nResult => ${result}`;
 }
 function compareAverages(avg1, avg2) {
-    if (avg1 > avg2) return `${avg1}`;
-    if (avg2 > avg1) return `${avg2}`;
+    if (avg1 > avg2) return `${avg1} is higher than ${avg2}`;
+    if (avg2 > avg1) return `${avg2} is higher than ${avg1}`;
+    return `The averages are equal: ${avg1}`;
 }
-console.log(processStudent("Prakash", 85, 90, 88));
-console.log(processStudent("Dev", 30, 35, 32));
-console.log(processStudent("Ashok", 70, 75, 80));
-console.log(compareAverages(87.67, 32.33));
+console.log(processStudent("Prakash",95,94,93))
+console.log(processStudent("Dev",55,74,63))
+console.log(processStudent("Ashok",15,24,33))
+
+
+
+
+

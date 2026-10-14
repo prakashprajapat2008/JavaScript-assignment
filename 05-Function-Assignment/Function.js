@@ -76,3 +76,139 @@ function studentResult(name, marks) {
 }
 console.log(studentResult("Prakash", 92));
 console.log(studentResult("Dev", 85));
+
+
+
+
+// Q=11 Function Scope------------------------------------------------------------------------?
+function displayAge() {
+    let age = 20;
+    console.log("displayAge => ", age);
+}
+displayAge();
+
+try {
+    console.log(age);
+} catch (error) {
+    console.log("function => ", error.message);
+}
+
+const course = "JavaScript";
+function displayCourse() {
+    console.log("Course => ", course);
+}
+// displayCourse();
+
+
+// Q=12 Combining Multiple Concepts---------------------------------------------------------?
+function analyzeStudent(name, m1, m2, m3) {
+    let total = m1 + m2 + m3;
+    let average = total / 3;
+    return `${name} scored total ${total} with average => ${average}`;
+}
+console.log(analyzeStudent("Prakash", 85, 90, 88));
+console.log(analyzeStudent("Dev", 72, 80, 76));
+
+
+// Q=13 Nested Functions------------------------------------------------------------------?
+function studentReport(name, m1, m2, m3) {
+    function total() {
+        return m1 + m2 + m3;
+    }
+    return `${name} total marks =>  ${total()}`;
+}
+console.log(studentReport("Prakash", 85, 90, 88));
+
+
+// // Q=14 Practical - Report Card Generator------------------------------------------------?
+function generateReport(name, m1, m2, m3) {
+    let total = m1 + m2 + m3;
+    let average = total / 3;
+    let result = average >= 40 ? "Pass" : "Fail";
+    return `Student Name => ${name}Total Marks => ${total} Average => ${average.toFixed(2)} Result => ${result}`;
+}
+console.log(generateReport("Prakash", 80, 75, 90));
+console.log(generateReport("Dev", 30, 35, 25));
+
+
+// Q=15 Practical - Multiple Utility Functions------------------------------------------?
+function sumOfThree(a, b, c) {
+    return a + b + c;
+}
+function averageOfTwo(x, y) {
+    return (x + y) / 2;
+}
+function maxOfTwo(a, b) {
+    return a > b ? a : b;
+}
+function fullName(first, last) {
+    return `${first} ${last}`;
+}
+console.log("Sum => ", sumOfThree(10, 20, 30));
+console.log("Average => ", averageOfTwo(12, 18));
+console.log("Maximum =>", maxOfTwo(25, 19));
+console.log("Full name => ", fullName("Prakash", "Prajapat"));
+
+
+// Q=16 Practical - Grade Calculator--------------------------------------------------------?
+const calculateGrade = function calculateGrade(percentage) {
+    if (percentage >= 90) return "A+";
+    if (percentage >= 80) return "A";
+    if (percentage >= 70) return "B";
+    if (percentage >= 60) return "C";
+    if (percentage >= 40) return "D";
+    return "F";
+};
+[95, 82, 67, 45, 32].forEach((percentage) => {
+    console.log(`${percentage}% =>  ${calculateGrade(percentage)}`);
+});
+
+
+// Q=17 Practical - Shopping Discount-----------------------------------------------------?
+function calculateFinalPrice(price, discountPercent) {
+    return price - (price * discountPercent / 100);
+}
+console.log("price => ", calculateFinalPrice(2500, 15));
+console.log("price => ", calculateFinalPrice(1200, 10));
+
+
+// Q=18 Practical - Temperature Converter------------------------------------------------?
+const celsiusToFahrenheit = function (c) {
+    return (c * 9 / 5) + 32;
+};
+const fahrenheitToCelsius = function (f) {
+    return (f - 32) * 5 / 9;
+};
+console.log(celsiusToFahrenheit(0));
+console.log(celsiusToFahrenheit(100));
+console.log(fahrenheitToCelsius(32));
+console.log(fahrenheitToCelsius(212));
+
+// Q=19 Mixed Advanced Question------------------------------------------------------?
+function createGreeting(name) {
+    function formatGreeting() {
+        return `Hello, ${name}`;
+    }
+    return formatGreeting();
+}
+console.log(createGreeting("Prakash"));
+
+
+// Q=20 Challenge Question - Combining Everything-------------------------------------?
+function processStudent(name, m1, m2, m3) {
+    function calculateMarks() {
+        const total = m1 + m2 + m3;
+        return { total, average: total / 3 };
+    }
+    const { total, average } = calculateMarks();
+    const result = average >= 40 ? "Pass" : "Fail";
+    return `Student => ${name}\nTotal marks => ${total}\nAverage => ${average.toFixed(2)}\nResult => ${result}`;
+}
+function compareAverages(avg1, avg2) {
+    if (avg1 > avg2) return `${avg1}`;
+    if (avg2 > avg1) return `${avg2}`;
+}
+console.log(processStudent("Prakash", 85, 90, 88));
+console.log(processStudent("Dev", 30, 35, 32));
+console.log(processStudent("Ashok", 70, 75, 80));
+console.log(compareAverages(87.67, 32.33));

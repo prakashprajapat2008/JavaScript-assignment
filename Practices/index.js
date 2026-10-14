@@ -486,6 +486,24 @@ console.log(arr)
 
 
 
+function reportCard(name, m1, m2) {
+    const total = m1 + m2;
+    const average = total / 2;
+    return { name, total, average };
+}
+
+const course = "JavaScript";
+function printCourse() {
+    console.log(course);
+}
+printCourse();
+
+function displayAge() {
+    const age = 20;
+    console.log(age);
+}
+displayAge();
+console.log(age);
 while (condition) {
   // code
   // update the condition (very important!)
@@ -590,3 +608,57 @@ function maxOfTwo(a, b) {
 }
 console.log(maxOfTwo(2,1))
 
+
+function isPositive(num) {
+    return num > 0;
+}
+console.log(isPositive(10));
+console.log(isPositive(-5));
+
+function calu(x,y,z){
+    let avg = (x+y+z)/3;
+    return avg.toFixed(2);
+}
+let S1avg = calu(45, 75, 97);
+let S2avg = calu(48, 74, 87);
+console.log(S1avg, S2avg)
+
+
+function sumOfThree(a, b, c) {
+    return a + b + c;
+}
+console.log(sumOfThree(10, 20, 30));
+
+
+function showMarks() {
+    let marks = 90;
+    console.log(marks);
+}
+showMarks();
+console.log(marks); // Error: marks is not defined
+
+
+let batch = "CSE";
+function printBatch() {
+    console.log(batch);
+}
+printBatch(); // CSE
+
+
+function displayAge() {
+    const age = 20;
+    console.log(age); // 20
+}
+displayAge();
+console.log(age); // ReferenceError: age is not defined
+
+let course = "JavaScript";
+function printCourse() {
+    console.log(course);
+}
+
+printCourse();
+
+
+
+cd ..ACTemperature

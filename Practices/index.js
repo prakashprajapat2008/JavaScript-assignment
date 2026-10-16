@@ -756,4 +756,11 @@ function main() {
 // }
 // console.log(name); // ReferenceError: name is not defined
     
-
+function first() {
+    var number = 100;
+}
+function second() {
+    console.log(number);
+}
+first();
+second();

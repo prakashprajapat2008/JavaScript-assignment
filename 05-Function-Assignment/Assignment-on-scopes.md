@@ -28,6 +28,7 @@ Output:
 City
 Country
 Yes
+
 ```
 
 
@@ -49,6 +50,7 @@ Output:
 ```js
 550
 500
+
 ```
 
 
@@ -64,6 +66,7 @@ function student() {
 function teacher() {
     var subject = "JavaScript";
 }
+
 ```
 
 Classify `"college"`, `"name"`, `"age"`, and `"subject"` as global or function-scoped variables.
@@ -75,6 +78,7 @@ Output:
 "name" => local scope
 "age" => local scope
 "subject" => local scope
+
 ```
 
 
@@ -92,12 +96,42 @@ first();
 second();
 ```
 
+Output:
+
+```js
+Error
+
+ReferenceError: number is not defined
+
+```
+
+
 ### Q5.
 Write a JavaScript program that:
 - Declares one variable in the global scope.
 - Declares another variable inside a function.
 - Prints both variables inside the function.
 - Prints the global variable outside the function.
+
+
+Output:
+
+```js
+let variable1 = "Hello";
+
+function functionOfVariable() {
+    let variable2 = "World";
+
+    console.log(variable1);
+    console.log(variable2);
+}
+
+functionOfVariable();
+
+console.log(variable1);
+
+```
+
 
 ---
 
@@ -115,24 +149,44 @@ play();
 console.log(game);
 ```
 
+Output:
+
+```js
+I like Cricket
+Cricket
+
+```
+
+
 ### Q7.
 What will be the output?
 
 ```js
-var language = "English";
-function showLanguage() {
-    console.log(language);
-}
-function changeLanguage() {
-    language = "Gujarati";
-}
-showLanguage();
-changeLanguage();
-showLanguage();
-console.log(language);
+English
+Gujarati
+Gujarati
 ```
 
 Explain why the output changes.
+
+Output:
+
+```js
+let variable1 = "Hello";
+
+function functionOfVariable() {
+    let variable2 = "World";
+
+    console.log(variable1);
+    console.log(variable2);
+}
+
+functionOfVariable();
+
+console.log(variable1);
+
+```
+
 
 ### Q8.
 Find the error, if any:
@@ -146,6 +200,16 @@ displayMarks();
 ```
 
 Will this code produce an error? Explain your answer.
+
+Output:
+75
+here will be no error
+
+```js
+
+
+```
+
 
 ### Q9.
 Predict the output:
@@ -162,6 +226,16 @@ console.log(message);
 ```
 
 Which statement causes an error, and why?
+
+Output:
+
+```js
+ReferenceError: message is not defined
+
+statement `console.log(message)` cause an error as `message` is a local scope and we can't call it outside of the fuction.
+
+```
+
 
 ### Q10.
 Write a program that declares a global variable named `"school"` with the value `"Sunrise School"`.

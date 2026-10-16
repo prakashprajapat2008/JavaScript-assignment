@@ -25,8 +25,8 @@ Answer the following:
 Output:
 
 ```js
-city
-country
+City
+Country
 Yes
 ```
 

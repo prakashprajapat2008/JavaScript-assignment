@@ -44,6 +44,14 @@ calculate();
 console.log(price);
 ```
 
+Output:
+
+```js
+550
+500
+```
+
+
 ### Q3.
 Identify the scope of each variable:
 

@@ -68,6 +68,16 @@ function teacher() {
 
 Classify `"college"`, `"name"`, `"age"`, and `"subject"` as global or function-scoped variables.
 
+Output:
+
+```js
+"college" => global scope
+"name" => local scope
+"age" => local scope
+"subject" => local scope
+```
+
+
 ### Q4.
 What will happen when you execute this code? Explain why.
 

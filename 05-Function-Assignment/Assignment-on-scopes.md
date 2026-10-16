@@ -162,9 +162,17 @@ Cricket
 What will be the output?
 
 ```js
-English
-Gujarati
-Gujarati
+var language = "English";
+function showLanguage() {
+    console.log(language);
+}
+function changeLanguage() {
+    language = "Gujarati";
+}
+showLanguage();
+changeLanguage();
+showLanguage();
+console.log(language);
 ```
 
 Explain why the output changes.
@@ -172,18 +180,9 @@ Explain why the output changes.
 Output:
 
 ```js
-let variable1 = "Hello";
-
-function functionOfVariable() {
-    let variable2 = "World";
-
-    console.log(variable1);
-    console.log(variable2);
-}
-
-functionOfVariable();
-
-console.log(variable1);
+English
+Gujarati
+Gujarati
 
 ```
 
@@ -202,12 +201,10 @@ displayMarks();
 Will this code produce an error? Explain your answer.
 
 Output:
-75
-here will be no error
 
 ```js
-
-
+75
+here will be no error
 ```
 
 

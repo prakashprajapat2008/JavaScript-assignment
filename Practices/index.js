@@ -765,16 +765,30 @@ function main() {
 // first();
 // second();
 
-let variable1 = "Hello";
+// let variable1 = "Hello";
 
-function functionOfVariable() {
-    let variable2 = "World";
+// function functionOfVariable() {
+//     let variable2 = "World";
 
-    console.log(variable1);
-    console.log(variable2);
+//     console.log(variable1);
+//     console.log(variable2);
+// }
+
+// functionOfVariable();
+
+// console.log(variable1);
+
+// function displayMarks() {
+//     console.log(marks);
+// }
+// var marks = 75;
+// displayMarks();
+
+var color = "Red";
+function showColor() {
+    var message = "Favorite color: ";
+    console.log(message + color);
 }
-
-functionOfVariable();
-
-console.log(variable1);
-
+showColor();
+console.log(color);
+console.log(message);

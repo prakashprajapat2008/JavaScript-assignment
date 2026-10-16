@@ -17,11 +17,19 @@ function display() {
 }
 display();
 ```
-
 Answer the following:
 - Which variable is declared in the global scope?
 - Which variable is declared inside the function?
 - Can both variables be accessed inside `"display()"`?
+
+Output:
+
+```js
+city
+country
+Yes
+```
+
 
 ### Q2.
 Predict the output:
@@ -839,3 +847,535 @@ console.log(total); // currently works, but should not
 **Tip1:** Try predicting the output before running your code. This will help you understand JavaScript scope and hoisting more effectively.
 
 **Tip2:** Focus on understanding *why* the scope chain works the way it does and how shadowing + hoisting interact. These concepts are the foundation for closures later.
+
+---
+
+# Answer Key
+
+## Section 1: What Is Scope?
+
+### Q1.
+- `city` is global; `country` is local to `display()`.
+- Both can be accessed inside `display()`: the function can access its local variable and the outer global variable.
+
+### Q2.
+```text
+550
+500
+```
+`tax` is local to `calculate()`, while `price` is global.
+
+### Q3.
+- `college`: global.
+- `name` and `age`: function-scoped to `student()`.
+- `subject`: function-scoped to `teacher()`.
+
+### Q4.
+`second()` throws `ReferenceError: number is not defined` at `console.log(number)`. `number` is local to `first()` and is not visible in `second()`, so execution stops at that error.
+
+### Q5.
+```js
+var greeting = "Hello";
+
+function displayGreeting() {
+    var name = "Prakash";
+    console.log(greeting);
+    console.log(name);
+}
+
+displayGreeting();
+console.log(greeting);
+```
+
+## Section 2: Global Scope
+
+### Q6.
+```text
+I like Cricket
+Cricket
+```
+
+### Q7.
+```text
+English
+Gujarati
+Gujarati
+```
+`changeLanguage()` assigns to the existing global variable because it does not declare a local `language`.
+
+### Q8.
+There is no error. When `displayMarks()` runs, the global `marks` has already been initialized to `75`, so the function prints `75`. The function declaration can appear earlier because it is hoisted.
+
+### Q9.
+```text
+Favorite color: Red
+Red
+ReferenceError: message is not defined
+```
+The last statement causes the error because `message` is local to `showColor()`.
+
+### Q10.
+```js
+var school = "Sunrise School";
+
+function showSchool() {
+    console.log(school);
+}
+
+function updateSchool() {
+    school = "Green Valley School";
+}
+
+showSchool();
+updateSchool();
+showSchool();
+console.log(school);
+```
+Output:
+```text
+Sunrise School
+Green Valley School
+Green Valley School
+```
+
+## Section 3: Function Scope
+
+### Q11.
+```text
+300
+ReferenceError: first is not defined
+```
+`first` exists only inside `calculateTotal()`. The final statement throws an error.
+
+### Q12.
+`console.log(salary)` throws `ReferenceError: salary is not defined`. `salary` is local to `employee()` and cannot be accessed outside it.
+
+### Q13.
+```text
+25
+15
+```
+The local `number` shadows the global `number`; assigning or reading the local variable does not change the global one.
+
+### Q14.
+Output:
+```text
+50
+50
+```
+Each call creates a new local `result`, initialized to `40` and then changed to `50`. It is not accessible after that call finishes.
+
+### Q15.
+```js
+function calculateArea() {
+    var length = 8;
+    var width = 4;
+    console.log(length * width);
+}
+
+calculateArea(); // 32
+```
+
+## Section 4: No Block Scope with `var`
+
+### Q16.
+```text
+Success
+```
+`var` is function-scoped (or global-scoped at top level), not block-scoped, so the `if` block does not contain `result` in a separate scope.
+
+### Q17.
+```text
+2
+```
+The `var number` inside the block refers to the same function/global-scoped binding and overwrites its value.
+
+### Q18.
+```text
+End
+```
+A standalone block does not create a separate scope for `var`.
+
+### Q19.
+The output is `undefined`. The `var result` declaration is hoisted, but the assignment is not; because the condition is false, the assignment never executes.
+
+### Q20.
+```js
+if (true) {
+    let secret = "Hidden";
+}
+console.log(secret); // ReferenceError: secret is not defined
+```
+`let` is block-scoped, so `secret` is only available inside the `if` block.
+
+## Section 5: Block Scope with Loops
+
+### Q21.
+```text
+2
+4
+6
+Final: 8
+```
+`number` is declared with `var`, so it remains accessible after the loop. It is `8` when the loop condition finally fails.
+
+### Q22.
+```text
+1
+2
+3
+Count: 4
+```
+The loop redeclares the same `var count` binding and changes its initial value from `10` to `1`.
+
+### Q23.
+```text
+5
+4
+3
+After loop: 2
+```
+Yes. `i` was declared outside the loop and is not block-scoped.
+
+### Q24.
+```text
+Item: 1
+Item: 2
+Item: 3
+Last item: 4
+```
+There is no error. The `var item` binding is accessible after the loop, where it contains `4`.
+
+### Q25.
+```js
+for (let step = 1; step <= 4; step++) {
+    console.log(step);
+}
+console.log(step); // ReferenceError: step is not defined
+```
+Unlike `var`, `let` confines `step` to the loop's block.
+
+## Section 6: Function Scope Inside Loops
+
+### Q26.
+```text
+10
+20
+30
+Final: 4
+```
+`number` is function-scoped, so it can be used after the loop inside `calculate()`. It is not available outside the function.
+
+### Q27.
+The two `console.log(marks)` statements inside `student()` do not cause errors. The loop prints `60`, `70`, and `80`; after it finishes, `marks` is `90`. The final `console.log(marks)` outside the function throws `ReferenceError: marks is not defined`, because `marks` is local to `student()`.
+
+### Q28.
+Output:
+```text
+5
+6
+7
+Final value: 8
+```
+The loop executes three times.
+
+### Q29.
+The first `console.log(i)` throws `ReferenceError: i is not defined`. `i` is local to `calculate()`; the error occurs before `calculate()` is called, so the call is not reached.
+
+### Q30.
+```js
+function printNumbers() {
+    for (var number = 1; number <= 5; number++) {
+        console.log(number);
+    }
+    console.log("Final:", number);
+}
+
+printNumbers();
+console.log(number); // ReferenceError: number is not defined
+```
+Inside the function, `number` is `6` after the loop. Although `var` is not block-scoped, it is function-scoped, so it cannot be accessed outside `printNumbers()`.
+
+## Section 7: Hoisting with `var`
+
+### Q31.
+```text
+undefined
+90
+```
+The declaration `var score` is hoisted to the top of its scope, but its assignment remains at the original line. Before the assignment, its value is `undefined`.
+
+### Q32.
+```text
+undefined
+20
+```
+The local `var a` declaration is hoisted within `test()`, so it shadows the global `a` throughout the function. Its value is initially `undefined`.
+
+### Q33.
+The first two statements print `undefined`; the last two print `100` and `200`:
+```text
+undefined
+undefined
+100
+200
+```
+The `var` declarations are hoisted, but their initializations are not.
+
+### Q34.
+Output:
+```text
+undefined
+50
+```
+Hoisted-equivalent form:
+```js
+function calculate() {
+    var total;
+    console.log(total);
+    total = 50;
+    console.log(total);
+}
+
+calculate();
+```
+
+### Q35.
+- First log inside `showPrice()`: `undefined`.
+- Final log: `100`.
+- The local declaration `var price` is hoisted to the top of `showPrice()` and shadows the global `price`; its assignment to `500` happens only after the first log.
+
+## Section 8: Function Declaration Hoisting
+
+### Q36.
+Output:
+```text
+Hello from CodingGita
+```
+Function declarations are hoisted with their function body, so the call can occur before the declaration.
+
+### Q37.
+Output:
+```text
+Function is hoisted completely
+```
+Like Q36, `display` is a function declaration and is available before its position in the source.
+
+### Q38.
+This throws `TypeError: greet is not a function`. The `var greet` declaration is hoisted, but its function-expression assignment is not. At the call, `greet` is still `undefined`.
+
+### Q39.
+```text
+function
+I am hoisted
+```
+The function declaration is available when `typeof myFunc` is evaluated and when it is called.
+
+### Q40.
+```js
+var name = "Prakash";
+
+sayHello();
+
+function sayHello() {
+    console.log("Hello, " + name);
+}
+```
+Output:
+```text
+Hello, Prakash
+```
+The function declaration is available before its written position, and it can read the global `name`.
+
+## Section 9: Scope Chain
+
+### Q41.
+```text
+2025
+CSE
+CodingGita
+```
+`batch()` finds `year` locally, `dept` in its enclosing `department()` scope, and `institute` in the global scope.
+
+### Q42.
+The first two logs print:
+```text
+I am global
+I am outer
+```
+Then `console.log(innerVar)` throws `ReferenceError: innerVar is not defined`, because there is no `innerVar` in the current, enclosing, or global scope.
+
+### Q43.
+All three variables are accessible in `deep()` through the scope chain. Output:
+```text
+1 2 3
+```
+`a` is global; `b` is in `level1()`; `c` is in `level2()`.
+
+### Q44.
+Output:
+```text
+first
+global
+```
+`second()` finds the nearest `x` in the enclosing `first()` function. The final log is outside `first()`, so it reads the global `x`.
+
+### Q45.
+```js
+var globalMessage = "Global value";
+
+function outer() {
+    var outerMessage = "Outer value";
+
+    function middle() {
+        var middleMessage = "Middle value";
+
+        function inner() {
+            var innerMessage = "Inner value";
+            console.log(innerMessage);
+            console.log(middleMessage);
+            console.log(outerMessage);
+            console.log(globalMessage);
+        }
+
+        inner();
+    }
+
+    middle();
+}
+
+outer();
+```
+Output:
+```text
+Inner value
+Middle value
+Outer value
+Global value
+```
+
+## Section 10: Variable Shadowing
+
+### Q46.
+```text
+90
+50
+```
+The local `score` shadows the global `score` inside `test()`; the global value remains unchanged.
+
+### Q47.
+```text
+Local Name
+Global Name
+```
+The local `name` shadows the global variable only inside `show()`; it does not change the global value.
+
+### Q48.
+```text
+20
+20
+```
+Because there is no local declaration, the function assigns to the existing global `value`. With a local `var value`, the function would instead change a local variable.
+
+### Q49.
+```text
+Inside: Red
+Outside: Blue
+```
+
+### Q50.
+```js
+var marks = 70;
+
+function showMarks() {
+    var marks = 95;
+    console.log("Inside:", marks);
+}
+
+showMarks();
+console.log("Outside:", marks);
+```
+Output:
+```text
+Inside: 95
+Outside: 70
+```
+
+## Section 11: Nested Functions
+
+### Q51.
+Output:
+```text
+Jenil
+Kartik Sir
+```
+Neither variable is accessible outside `outer()`. `teacher` is local to `outer()` and `student` is local to `inner()`.
+
+### Q52.
+Output:
+```text
+Parent
+Child
+Grandchild
+```
+`grandchild()` can access `a` and `b` from its enclosing functions and its own local `c`.
+
+### Q53.
+The first statement, `inner()`, throws `ReferenceError: inner is not defined`: `inner` is local to `outer()`. Since the error is uncaught, execution stops there, so `outer()` is not called. If `outer()` were called first, `inner()` would still need to be called from inside `outer()` to be accessible.
+
+### Q54.
+Output:
+```text
+Hello students
+```
+`show` closes over the lexical environment where it was created, retaining access to `greeting` after `createMessage()` returns.
+
+### Q55.
+```js
+function studentInfo() {
+    var name = "Prakash";
+    var course = "JavaScript";
+
+    function display() {
+        console.log("Name:", name);
+        console.log("Course:", course);
+    }
+
+    display();
+}
+
+studentInfo();
+```
+
+## Section 12: Common Errors with `var`
+
+### Q56.
+In a non-strict script, assigning to undeclared `x` creates/sets a global property, so the final log prints `100`. This is an unintended global side effect that can cause name collisions. In strict mode, the assignment instead throws a `ReferenceError`.
+
+### Q57.
+Output:
+```text
+20
+```
+`var` is not block-scoped, so `x` remains available after the `if` block. Beginners may incorrectly expect the braces to limit its scope.
+
+### Q58.
+It prints `undefined`. `var a` is hoisted, but the assignment to `10` has not run yet.
+
+### Q59.
+This is allowed. The second declaration reuses the same `var` binding and assigns `20`, so the output is `20`. Repeated declarations can be confusing because they may unintentionally overwrite an existing variable.
+
+### Q60.
+```js
+function calculate() {
+    var total = 0;
+    for (var i = 1; i <= 5; i++) {
+        total = total + i;
+    }
+    console.log(total);
+}
+
+calculate();
+console.log(total); // ReferenceError: total is not defined
+```
+Declaring `total` with `var` makes it local to `calculate()`, avoiding accidental creation of a global variable. The final line intentionally demonstrates that it cannot be accessed outside the function.

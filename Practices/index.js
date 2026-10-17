@@ -814,13 +814,7 @@ function processStudent(name, m1, m2, m3) {
     let { total, average } = calculate();
     let result = m1 >= 33 && m2 >= 33 && m3 >= 33 ? "Pass" : "Fail";
 
-    return (
-        `Student Name => ${name}\n` +
-        `Marks => ${m1}, ${m2}, ${m3}\n` +
-        `Total => ${total}\n` +
-        `Average => ${average.toFixed(2)}\n` +
-        `Result => ${result}\n`
-    );
+    return (`Student Name => ${name}\n` + `Marks => ${m1}, ${m2}, ${m3}\n` + `Total => ${total}\n` + `Average => ${average.toFixed(2)}\n` + `Result => ${result}\n`);
 }
 
 function compareAverages(avg1, avg2) {

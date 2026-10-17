@@ -130,6 +130,11 @@ functionOfVariable();
 
 console.log(variable1);
 
+=>
+Hello   
+World
+Hello
+
 ```
 
 
@@ -256,6 +261,10 @@ function updateSchool() {
 showSchool();
 updateSchool();
 console.log(school);
+
+=>
+Sunrise School
+Green Valley School
 
 ```
 

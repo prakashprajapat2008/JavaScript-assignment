@@ -850,3 +850,16 @@
 // showSchool();
 // updateSchool();
 // console.log(school);
+
+let variable1 = "Hello";
+
+function functionOfVariable() {
+    let variable2 = "World";
+
+    console.log(variable1);
+    console.log(variable2);
+}
+
+functionOfVariable();
+
+console.log(variable1);

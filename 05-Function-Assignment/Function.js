@@ -200,25 +200,34 @@ console.log("Total Price => ", result);
 
 
 // Q=20 Challenge Question - Combining Everything-------------------------------------?
+
 function processStudent(name, m1, m2, m3) {
-    function calculateMarks() {
-        const total = m1 + m2 + m3;
-        return { total, average: total / 3 };
+    function calculate() {
+        let total = m1 + m2 + m3;
+        let average = total / 3;
+        return { total, average };
     }
-    const { total, average } = calculateMarks();
-    const result = average >= 40 ? "Pass" : "Fail";
-    return `Student => ${name}\nTotal marks => ${total}\nAverage => ${average.toFixed(2)}\nResult => ${result}`;
+
+    let { total, average } = calculate();
+    let result = m1 >= 33 && m2 >= 33 && m3 >= 33 ? "Pass" : "Fail";
+
+    return (
+        `Student Name => ${name}\n` +
+        `Marks => ${m1}, ${m2}, ${m3}\n` +
+        `Total => ${total}\n` +
+        `Average => ${average.toFixed(2)}\n` +
+        `Result => ${result}\n`
+    );
 }
+
 function compareAverages(avg1, avg2) {
-    if (avg1 > avg2) return `${avg1} is higher than ${avg2}`;
-    if (avg2 > avg1) return `${avg2} is higher than ${avg1}`;
-    return `The averages are equal: ${avg1}`;
+    if (avg1 > avg2) return "First average is higher";
+    if (avg2 > avg1) return "Second average is higher";
+    return "Both averages are equal";
 }
-console.log(processStudent("Prakash",95,94,93))
-console.log(processStudent("Dev",55,74,63))
-console.log(processStudent("Ashok",15,24,33))
 
+console.log(processStudent("Prakash", 80, 75, 90));
+console.log(processStudent("Dev", 60, 70, 65));
+console.log(processStudent("Dev P", 30, 80, 75));
 
-
-
-
+console.log(compareAverages(81.67, 65.00));

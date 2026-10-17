@@ -291,7 +291,6 @@ Explain the behavior of the last statement.
 Output:
 
 ```js
-let school = "Sunrise School";
 300
 ReferenceError: first is not defined
 

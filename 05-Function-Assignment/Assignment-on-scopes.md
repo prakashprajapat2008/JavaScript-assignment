@@ -453,6 +453,7 @@ Success
 
 In JavaScript, a variable declared with `var` does not follow block scope. Therefore, `result` can also be accessed outside the `if` block.
 JavaScript में `var` से घोषित वेरिएबल Block Scope का पालन नहीं करता। इसलिए `result` को `if` ब्लॉक के बाहर भी एक्सेस किया जा सकता है।
+
 ```
 
 
@@ -468,6 +469,17 @@ console.log(number);
 ```
 
 Why does the output differ from what you might expect if the block had its own scope?
+
+Output:
+
+```js
+2
+
+The output would have been different if the variable had been declared using `let`, because `let` follows block scope, whereas `var` follows function scope.
+अगर वेरिएबल को `let` से घोषित किया गया होता, तो आउटपुट अलग होता, क्योंकि `let` Block Scope का पालन करता है, जबकि `var` Function Scope का पालन करता है।
+
+```
+
 
 ### Q18.
 Predict the output:

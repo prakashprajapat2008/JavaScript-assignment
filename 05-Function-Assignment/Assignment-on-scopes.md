@@ -303,6 +303,10 @@ function calculateTotal() {
 }
 calculateTotal();
 
+=>
+300
+100
+
 ```
 
 
@@ -316,6 +320,23 @@ function employee() {
 employee();
 console.log(salary);
 ```
+
+Output:
+
+```js
+ReferenceError: salary is not defined
+
+Right Code =>
+function employee() {
+    var salary = 30000;
+    console.log(salary);
+}
+employee();
+
+=>
+30000
+```
+
 
 ### Q13.
 What will be the output?
@@ -331,6 +352,19 @@ console.log(number);
 ```
 
 Why doesn't the value printed inside the function change the global variable?
+
+Output:
+
+```js
+25
+15
+
+Both number variables are different variables. Therefore, changing the value of the local variable does not change the value of the global variable.
+
+दोनों `number` अलग-अलग variables हैं। इसलिए local variable की value बदलने से global variable की value नहीं बदलती।   ka english
+
+```
+
 
 ### Q14.
 Consider this code:
@@ -350,6 +384,21 @@ Answer the following:
 - Is a new local variable created each time the function is called?
 - Does the local variable remain accessible after the function finishes executing?
 
+Output:
+
+```js
+50
+50
+
+Yes, a new local variable is created each time the function is called.
+हाँ, हर बार function call होने पर result का नया local variable बनता है।
+
+No, the local variable is not accessible outside the function.
+नहीं, फ़ंक्शन का काम पूरा होने के बाद result को फ़ंक्शन के बाहर इस्तेमाल नहीं कर सकते, क्योंकि यह एक लोकल वेरिएबल है।
+
+```
+
+
 ### Q15.
 Write a function named `"calculateArea()"` that:
 - Declares a local variable `"length"` with the value `8`.
@@ -358,6 +407,30 @@ Write a function named `"calculateArea()"` that:
 - Does not make either variable accessible outside the function.
 
 ---
+
+Output:
+
+```js
+function calculateArea() {
+    let length = 8
+    let width = 4
+    let area = length * width
+    console.log(area)
+}
+
+Right Code =>
+function calculateArea() {
+    let length = 8;
+    let width = 4;
+    let area = length * width;
+    console.log(area);
+}
+calculateArea();
+
+=>
+32
+```
+
 
 ## Section 4: No Block Scope with `"var"` (5 Questions)
 
@@ -372,6 +445,16 @@ console.log(result);
 ```
 
 Explain why `"result"` is accessible outside the `"if"` block.
+
+Output:
+
+```js
+Success
+
+In JavaScript, a variable declared with `var` does not follow block scope. Therefore, `result` can also be accessed outside the `if` block.
+JavaScript में `var` से घोषित वेरिएबल Block Scope का पालन नहीं करता। इसलिए `result` को `if` ब्लॉक के बाहर भी एक्सेस किया जा सकता है।
+```
+
 
 ### Q17.
 What will be printed?

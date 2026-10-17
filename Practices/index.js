@@ -860,14 +860,55 @@
 // functionOfVariable();
 // console.log(variable1);
 
-function calculateTotal() {
-    var first = 100;
-    var second = 200;
-    console.log(first + second);
+// function calculateTotal() {
+//     var first = 100;
+//     var second = 200;
+//     console.log(first + second);
+// }
+// calculateTotal();
+// console.log(first);
+//  // Output
+//  // 300
+//  // Error
+
+// var number = 15;
+// function test() {
+//     var number = 25;
+//     console.log(number);
+// }
+// test();
+// console.log(number);
+
+// function calculate() {
+//     var result = 40;
+//     result = result + 10;
+//     console.log(result);
+// }
+// calculate();
+// calculate();
+
+// function calculateArea() {
+//     let length = 8;
+//     let width = 4;
+//     let area = length * width;
+
+//     console.log(area); 
+// }
+// calculateArea();
+
+function calculateArea() {
+    let length = 8
+    let width = 4
+    let area = length * width
+    console.log(area)
 }
-calculateTotal();
-console.log(first);
- // Output
- // 300
- // Error
- 
+
+
+
+
+
+
+
+
+
+

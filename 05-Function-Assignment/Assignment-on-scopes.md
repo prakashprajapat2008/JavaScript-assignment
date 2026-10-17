@@ -288,6 +288,25 @@ console.log(first);
 
 Explain the behavior of the last statement.
 
+Output:
+
+```js
+let school = "Sunrise School";
+300
+ReferenceError: first is not defined
+
+Right code =>
+function calculateTotal() {
+    var first = 100;
+    var second = 200;
+    console.log(first + second);
+    console.log(first);
+}
+calculateTotal();
+
+```
+
+
 ### Q12.
 Find and explain the error:
 

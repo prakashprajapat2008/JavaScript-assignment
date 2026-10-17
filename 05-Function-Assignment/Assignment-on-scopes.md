@@ -243,6 +243,23 @@ Create two functions:
 
 Call both functions in an appropriate order and print the final value of `"school"`.
 
+Output:
+
+```js
+let school = "Sunrise School";
+function showSchool() {
+    console.log(school)
+};
+function updateSchool() {
+    school = "Green Valley School"
+};
+showSchool();
+updateSchool();
+console.log(school);
+
+```
+
+
 ---
 
 ## Section 3: Function Scope (5 Questions)

@@ -1100,6 +1100,14 @@ Write a small program that:
 - The function prints a message using a global variable.
 - Demonstrates that the entire function (name + body) is available due to hoisting.
 
+Output:
+
+```js
+
+
+```
+
+
 ---
 
 ## Section 9: Scope Chain (5 Questions)

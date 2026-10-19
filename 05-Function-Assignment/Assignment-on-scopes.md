@@ -494,6 +494,16 @@ console.log(message);
 
 Does the standalone block create a separate scope for `"var"`?
 
+Output:
+
+```js
+End
+
+No, the standalone block does not create a separate scope for var
+नहीं, अकेला ब्लॉक (`{ }`) `var` के लिए अलग स्कोप नहीं बनाता है।
+```
+
+
 ### Q19.
 Find the output and explain the variable's scope:
 

@@ -1088,6 +1088,8 @@ console.log(myFunc());
 Output:
 
 ```js
+function
+I am 
 
 ```
 

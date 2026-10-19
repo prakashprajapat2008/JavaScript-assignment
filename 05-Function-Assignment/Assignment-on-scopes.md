@@ -517,6 +517,17 @@ console.log(result);
 
 Does the condition being `"false"` prevent the `"var"` declaration from being hoisted?
 
+Output:
+
+```js
+undefined
+
+No, the false condition does not prevent var from being hoisted. var is function-scoped, not block-scoped.
+नहीं, `false` होने से `var` की Hoisting नहीं रुकती। `var` function-scoped होता है, block-scoped नहीं। 
+
+```
+
+
 ### Q20.
 Rewrite the following code so that the variable `"secret"` cannot be accessed outside the `"if"` block. Use a variable declaration that supports block scope.
 
@@ -528,6 +539,22 @@ console.log(secret);
 ```
 
 Explain why your solution works.
+
+Output:
+
+```js
+if (true) {
+    let secret = "Hidden";
+}
+console.log(secret);
+
+ReferenceError: secret is not defined
+
+Explanation => The `let` keyword supports block scope. Therefore, the variable `secret` can only be accessed inside the `if` block and cannot be accessed outside it.
+व्याख्या => `let` कीवर्ड Block Scope को सपोर्ट करता है। इसलिए, वेरिएबल `secret` को केवल `if` ब्लॉक के अंदर ही एक्सेस किया जा सकता है और ब्लॉक के बाहर एक्सेस नहीं किया जा सकता।
+
+```
+
 
 ---
 
@@ -544,6 +571,14 @@ console.log("Final:", number);
 ```
 
 Explain why `"number"` can be accessed after the loop.
+
+Output:
+
+```js
+
+
+```
+
 
 ### Q22.
 What will be printed?

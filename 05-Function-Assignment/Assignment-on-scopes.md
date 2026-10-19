@@ -1103,7 +1103,16 @@ Write a small program that:
 Output:
 
 ```js
+var message = "Hello, JavaScript!";
 
+greet();
+
+function greet() {
+    console.log(message);
+}
+
+=>
+Hello, JavaScript!
 
 ```
 

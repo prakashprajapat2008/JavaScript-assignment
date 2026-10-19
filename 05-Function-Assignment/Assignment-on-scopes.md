@@ -575,7 +575,13 @@ Explain why `"number"` can be accessed after the loop.
 Output:
 
 ```js
+2
+4
+6
+Final: 8
 
+Because var is function-scoped, not block-scoped. Therefore, number can also be accessed outside the for loop.
+क्योंकि var function-scoped होता है, block-scoped नहीं। इसलिए for लूप के बाहर भी number को एक्सेस किया जा सकता है।
 
 ```
 
@@ -593,6 +599,20 @@ console.log("Count:", count);
 
 Explain what happens to the original value of `"count"`.
 
+Output:
+
+```js
+1
+2
+3
+Count: 4
+
+The original value 10 is overwritten by 1 because var does not create a separate block-scoped variable. Both declarations refer to the same variable.
+count की मूल वैल्यू 10 को 1 से बदल दिया जाता है, क्योंकि var एक अलग Block Scope वाला वेरिएबल नहीं बनाता है। दोनों डिक्लेरेशन एक ही वेरिएबल को दर्शाते हैं।
+
+```
+
+
 ### Q23.
 Predict the output:
 
@@ -607,6 +627,20 @@ console.log("After loop:", i);
 
 Is `"i"` accessible after the loop? Why?
 
+Output:
+
+```js
+5
+4
+3
+After loop: 2
+
+Yes, i is accessible after the loop because var is function-scoped, not block-scoped. Therefore, it can be accessed outside the while loop.
+हाँ, लूप के बाद भी i को एक्सेस किया जा सकता है, क्योंकि var function-scoped होता है, block-scoped नहीं। इसलिए इसे while लूप के बाहर भी एक्सेस किया जा सकता है।
+
+```
+
+
 ### Q24.
 Find the error, if any:
 
@@ -619,6 +653,20 @@ console.log("Last item:", item);
 
 Does the final statement cause an error? What value does `"item"` contain?
 
+Output:
+
+```js
+Item: 1
+Item: 2
+Item: 3
+Last item: 4
+
+No error will occur because var is function-scoped, not block-scoped. Therefore, item can also be accessed outside the for loop.
+नहीं, कोई एरर नहीं आएगा, क्योंकि var function-scoped होता है, block-scoped नहीं। इसलिए item को for लूप के बाहर भी एक्सेस किया जा सकता है।
+
+```
+
+
 ### Q25.
 Rewrite the following loop so that the loop variable is not accessible outside the loop. Use a declaration that provides block scope.
 
@@ -630,6 +678,21 @@ console.log(step);
 ```
 
 Explain the difference between your solution and the original code.
+
+Output:
+
+```js
+1
+2
+3
+4
+ReferenceError: step is not defined
+
+The let keyword supports block scope. Therefore, the variable step is accessible only inside the for loop and cannot be accessed outside it.
+let कीवर्ड Block Scope को सपोर्ट करता है। इसलिए, वेरिएबल step केवल for लूप के अंदर ही एक्सेस किया जा सकता है और लूप के बाहर एक्सेस नहीं किया जा सकता।
+
+```
+
 
 ---
 
@@ -650,6 +713,20 @@ calculate();
 
 Explain why `"number"` is accessible after the loop but not outside the function.
 
+Output:
+
+```js
+10
+20
+30
+Final: 4
+
+The variable number is accessible after the loop because var is function-scoped, not block-scoped. However, it cannot be accessed outside the calculate() function because its scope is limited to that function.
+number को लूप के बाद एक्सेस किया जा सकता है, क्योंकि var Function Scope को सपोर्ट करता है, Block Scope को नहीं। लेकिन इसे calculate() फ़ंक्शन के बाहर एक्सेस नहीं किया जा सकता, क्योंकि इसका स्कोप उसी फ़ंक्शन तक सीमित है।
+
+```
+
+
 ### Q27.
 Identify which statements cause errors:
 
@@ -665,6 +742,21 @@ console.log(marks);
 ```
 
 Explain your answer for each occurrence of `"marks"`.
+
+Output:
+
+```js
+60
+70
+80
+90
+ReferenceError: marks is not defined
+
+var is scoped to the entire function, but it cannot be accessed outside the function.
+var का स्कोप पूरे फ़ंक्शन तक होता है, लेकिन फ़ंक्शन के बाहर नहीं।
+
+```
+
 
 ### Q28.
 Predict the output:
@@ -683,6 +775,20 @@ test();
 
 How many times does the loop execute?
 
+Output:
+
+```js
+5
+6
+7
+Final value: 8
+
+The loop executes 3 times, for the values 5, 6, and 7.
+लूप 3 बार execute होता है: 5, 6, और 7 के लिए।
+
+```
+
+
 ### Q29.
 Find and explain the error:
 
@@ -698,6 +804,17 @@ calculate();
 
 Why does the order of these statements matter?
 
+Output:
+
+```js
+ReferenceError: i is not defined
+
+The error is because of the statement `console.log(i)` because i is a local scope and it can't be called outside the function.
+यह एरर console.log(i) स्टेटमेंट के कारण आता है, क्योंकि i एक Local Scope वाला वेरिएबल है और इसे फ़ंक्शन के बाहर एक्सेस नहीं किया जा सकता।
+
+```
+
+
 ### Q30.
 Write a function named `"printNumbers()"` that:
 - Uses a `"for"` loop to print numbers from 1 to 5.
@@ -706,6 +823,34 @@ Write a function named `"printNumbers()"` that:
 - Demonstrates that the loop variable cannot be accessed outside the function.
 
 Write the function call and the statement that attempts to access the variable outside the function. Explain the expected error.
+
+Output:
+
+```js
+function printNumbers() {
+    for (var i = 1; i <= 5; i++) {
+        console.log(i);
+    }
+    console.log("Final:", i);
+}
+
+printNumbers();
+console.log(i);
+
+=>
+1
+2
+3
+4
+5
+Final: 6
+ReferenceError: number is not defined
+
+You should call printNumbers() first so that the function's output is displayed before the error occurs.
+printNumbers() को पहले कॉल करना चाहिए, ताकि फ़ंक्शन का आउटपुट एरर आने से पहले दिखाई दे।
+
+```
+
 
 ---
 
@@ -722,6 +867,18 @@ console.log(score);
 
 Explain why the first statement does not produce a `"ReferenceError"`.
 
+Output:
+
+```js
+undefined
+90
+
+Due to hoisting, the var declaration is moved to the top of its scope, but the value 90 is assigned later. Therefore, undefined is printed first, and 90 is printed second.
+var की declaration hoisting के कारण ऊपर चली जाती है, लेकिन उसकी value 90 बाद में assign होती है। इसलिए पहली बार undefined और दूसरी बार 90 प्रिंट होता है।
+
+```
+
+
 ### Q32.
 What will be the output?
 
@@ -737,6 +894,18 @@ test();
 
 Why doesn't the first `"console.log()"` print the global value of `"a"`?
 
+Output:
+
+```js
+undefined
+20
+
+The first console.log() dosen't print the global value of a because a new local scope variable is defined in the function.
+पहला console.log() ग्लोबल वेरिएबल a की वैल्यू प्रिंट नहीं करता, क्योंकि फ़ंक्शन के अंदर एक नया लोकल स्कोप वाला वेरिएबल a डिक्लेयर किया गया है।
+
+```
+
+
 ### Q33.
 Identify which statements produce `"undefined"` and explain why:
 
@@ -748,6 +917,20 @@ var second = 200;
 console.log(first);
 console.log(second);
 ```
+
+Output:
+
+```js
+undefined
+undefined
+100
+200
+
+The first and statement `console.log(first)` and `console.log(second)` produce undefined as they are written above the variable declaration and the `var` make thm hoisted.
+पहले और दूसरे स्टेटमेंट console.log(first) और console.log(second) undefined प्रिंट करते हैं, क्योंकि वे वेरिएबल की declaration से पहले लिखे गए हैं और var उन्हें hoisting के कारण स्कोप के ऊपर उपलब्ध करा देता है।
+
+```
+
 
 ### Q34.
 Predict the output:
@@ -762,6 +945,23 @@ calculate();
 ```
 
 Rewrite the code in a way that represents how the variable declaration is handled during hoisting.
+
+Output:
+
+```js
+undefined
+50
+
+function calculate() {
+    var total;
+    console.log(total);
+    total = 50;
+    console.log(total);
+}
+calculate();
+
+```
+
 
 ### Q35.
 Find and explain the issue:
@@ -781,6 +981,24 @@ Answer the following:
 - What does the final `"console.log()"` print?
 - How does hoisting affect the local variable `"price"`?
 
+Output:
+
+```js
+undefined
+100
+
+The first console.log(price) inside the function prints undefined.
+फ़ंक्शन के अंदर पहला console.log(price) → undefined प्रिंट करता है।
+
+The final console.log(price) outside the function prints 100.
+फ़ंक्शन के बाहर आखिरी console.log(price) → 100 प्रिंट करता है।
+
+Due to hoisting, the declaration of the local variable price is moved to the top of the function. Therefore, the local variable is used instead of the global variable price = 100 inside the function. Later, the local variable's value becomes 500.
+Hoisting के कारण लोकल var price की declaration फ़ंक्शन के ऊपर चली जाती है। इसलिए फ़ंक्शन के अंदर ग्लोबल price = 100 के बजाय लोकल वेरिएबल इस्तेमाल होता है। बाद में लोकल वेरिएबल की वैल्यू 500 हो जाती है।
+
+```
+
+
 ---
 
 
@@ -796,6 +1014,18 @@ function sayHello() {
 ```
 Explain why this works even though the function is called before it is written.
 
+
+Output:
+
+```js
+Hello from CodingGita
+
+Because of hoisting, JavaScript allows a function declaration to be called before it is written in the code.
+Hoisting के कारण JavaScript में किसी फ़ंक्शन को कोड में लिखने से पहले भी कॉल किया जा सकता है।
+
+```
+
+
 ### Q37.
 What will be the output? Explain the difference from a normal `var` variable.
 ```js
@@ -804,6 +1034,23 @@ function display() {
     console.log("Function is hoisted completely");
 }
 ```
+
+Output:
+
+```js
+Function is hoisted completely
+
+console.log(number);
+var number = 10;
+
+undefined
+
+If we had declared normal var variable instead of the function, then the output would have been `undefined`
+
+अगर हमने फ़ंक्शन की जगह सामान्य var वेरिएबल डिक्लेयर किया होता, तो आउटपुट undefined होता।
+
+```
+
 
 ### Q38.
 Find and explain the issue (if any):
@@ -814,6 +1061,19 @@ var greet = function() {
 };
 ```
 Why does this behave differently from a function declaration?
+
+Output:
+
+```js
+TypeError: greet is not a function
+
+var में greet को एक वेरिएबल माना जाता है, और greet() को फ़ंक्शन की तरह कॉल करने पर एरर आता है, क्योंकि Function Expression पूरी तरह Hoist नहीं होता।
+var dosen't consider greet() as a function and treat it as a variable. greet expression are not fully hoisted.
+
+Function Declaration पूरी तरह Hoist होती है, इसलिए उसे declaration से पहले भी कॉल किया जा सकता है।
+function declaration are fully hoisted.
+```
+
 
 ### Q39.
 Predict the output:

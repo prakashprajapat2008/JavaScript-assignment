@@ -501,6 +501,7 @@ End
 
 No, the standalone block does not create a separate scope for var
 नहीं, अकेला ब्लॉक (`{ }`) `var` के लिए अलग स्कोप नहीं बनाता है।
+
 ```
 
 

@@ -1085,6 +1085,13 @@ function myFunc() {
 console.log(myFunc());
 ```
 
+Output:
+
+```js
+
+```
+
+
 ### Q40.
 Write a small program that:
 - Calls a function **before** its declaration.

@@ -1304,7 +1304,7 @@ Compare this with the previous questions (where `var` was used inside the functi
 Output:
 
 ```js
-
+Answer
 
 ```
 

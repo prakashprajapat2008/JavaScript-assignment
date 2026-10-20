@@ -1278,6 +1278,15 @@ console.log(name);
 ```
 Does the local variable permanently change the global one? Why or why not?
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q48.
 Find the output and explain:
 ```js

@@ -1162,6 +1162,15 @@ function outer() {
 outer();
 ```
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q43.
 Identify which variables are accessible inside `deep()` and which are not:
 ```js

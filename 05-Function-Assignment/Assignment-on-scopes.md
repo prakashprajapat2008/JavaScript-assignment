@@ -1473,6 +1473,15 @@ console.log(x);
 ```
 Explain the unintended side effect.
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q57.
 Predict the output and explain the misconception:
 ```js

@@ -1256,6 +1256,15 @@ console.log(score);
 ```
 Explain what “shadowing” means in this example.
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q47.
 What will be printed?
 ```js

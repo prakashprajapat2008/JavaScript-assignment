@@ -1234,7 +1234,7 @@ Demonstrate the scope chain clearly.
 Output:
 
 ```js
-
+Answer
 
 ```
 

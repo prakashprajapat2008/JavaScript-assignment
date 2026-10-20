@@ -1436,7 +1436,7 @@ Explain how the inner function still has access to `greeting`.
 Output:
 
 ```js
-
+Answer
 
 ```
 

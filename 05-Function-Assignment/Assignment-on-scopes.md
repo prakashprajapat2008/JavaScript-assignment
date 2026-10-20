@@ -1550,6 +1550,14 @@ calculate();
 console.log(total); // currently works, but should not
 ```
 
+Output:
+
+```js
+Answer
+
+```
+
+
 ---
 
 ## Submission Instructions

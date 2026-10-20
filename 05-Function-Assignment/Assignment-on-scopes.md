@@ -1527,6 +1527,15 @@ console.log(x);
 ```
 Is this allowed with `var`? Why can it become confusing?
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q60.
 Rewrite the following code to avoid the common error of accidentally creating a global variable, and also make the variable properly scoped:
 ```js

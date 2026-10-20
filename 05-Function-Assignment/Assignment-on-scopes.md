@@ -1385,6 +1385,15 @@ function parent() {
 parent();
 ```
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q53.
 Find the error(s):
 ```js

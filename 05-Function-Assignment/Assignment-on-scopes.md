@@ -1218,7 +1218,7 @@ Explain why the value of `x` changes depending on the location of `console.log`.
 Output:
 
 ```js
-
+Answer
 
 ```
 

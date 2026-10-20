@@ -1138,6 +1138,14 @@ function department() {
 department();
 ```
 
+Output:
+
+```js
+
+
+```
+
+
 ### Q42.
 What will happen when this code runs? Explain using the scope chain.
 ```js

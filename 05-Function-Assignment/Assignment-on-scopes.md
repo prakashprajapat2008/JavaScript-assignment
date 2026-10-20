@@ -1496,7 +1496,7 @@ Why do beginners often expect an error here?
 Output:
 
 ```js
-
+Answer
 
 ```
 

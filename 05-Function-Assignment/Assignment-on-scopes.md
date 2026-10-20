@@ -1321,6 +1321,15 @@ changeColor();
 console.log("Outside:", color);
 ```
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q50.
 Write a program that demonstrates variable shadowing:
 - Declare a global variable `marks = 70`.

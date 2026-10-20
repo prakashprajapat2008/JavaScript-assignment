@@ -1477,7 +1477,7 @@ Explain the unintended side effect.
 Output:
 
 ```js
-
+Answer
 
 ```
 

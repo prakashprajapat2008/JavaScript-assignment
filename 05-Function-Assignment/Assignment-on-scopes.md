@@ -1189,6 +1189,15 @@ function level1() {
 level1();
 ```
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q44.
 Predict the output:
 ```js

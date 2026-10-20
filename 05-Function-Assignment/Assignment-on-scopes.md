@@ -1230,6 +1230,15 @@ Write a nested function structure (at least 3 levels) that prints:
 - A variable from the outermost function / global scope  
 Demonstrate the scope chain clearly.
 
+
+Output:
+
+```js
+
+
+```
+
+
 ---
 
 ## Section 10: Variable Shadowing (5 Questions)

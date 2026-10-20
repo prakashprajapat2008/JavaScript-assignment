@@ -1408,6 +1408,15 @@ outer();
 ```
 Why does the order and placement of the function call matter?
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q54.
 Predict the output:
 ```js

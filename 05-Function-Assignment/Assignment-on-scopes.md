@@ -1300,6 +1300,15 @@ console.log(value);
 ```
 Compare this with the previous questions (where `var` was used inside the function).
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q49.
 Predict the complete output:
 ```js

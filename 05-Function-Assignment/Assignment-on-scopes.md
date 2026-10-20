@@ -1282,7 +1282,7 @@ Does the local variable permanently change the global one? Why or why not?
 Output:
 
 ```js
-
+Answer
 
 ```
 

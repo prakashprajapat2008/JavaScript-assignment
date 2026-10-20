@@ -1531,7 +1531,7 @@ Is this allowed with `var`? Why can it become confusing?
 Output:
 
 ```js
-
+Answer
 
 ```
 

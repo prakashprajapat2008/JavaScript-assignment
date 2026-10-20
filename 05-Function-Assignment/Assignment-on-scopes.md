@@ -1492,6 +1492,15 @@ console.log(x);
 ```
 Why do beginners often expect an error here?
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q58.
 What happens here?
 ```js

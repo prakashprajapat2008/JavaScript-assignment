@@ -1360,7 +1360,7 @@ Can you access `teacher` or `student` outside `outer()`? Explain.
 Output:
 
 ```js
-
+Answer
 
 ```
 

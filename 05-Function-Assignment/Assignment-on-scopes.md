@@ -1432,6 +1432,15 @@ messageFunc();
 ```
 Explain how the inner function still has access to `greeting`.
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q55.
 Write a function named `studentInfo()` that:
 - Declares a local variable `name`

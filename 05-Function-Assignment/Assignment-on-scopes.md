@@ -1449,6 +1449,15 @@ Write a function named `studentInfo()` that:
 - Calls the inner function from the outer function  
 (This is the mini-assignment style question from the notes.)
 
+
+Output:
+
+```js
+
+
+```
+
+
 ---
 
 ## Section 12: Common Errors with `var` (5 Questions)

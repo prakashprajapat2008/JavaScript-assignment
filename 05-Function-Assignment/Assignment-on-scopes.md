@@ -1260,7 +1260,7 @@ Explain what “shadowing” means in this example.
 Output:
 
 ```js
-
+Answer
 
 ```
 

@@ -1325,7 +1325,7 @@ console.log("Outside:", color);
 Output:
 
 ```js
-
+Answer
 
 ```
 

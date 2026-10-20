@@ -1513,7 +1513,7 @@ Explain why there is no `ReferenceError` and what value is printed.
 Output:
 
 ```js
-
+Answer
 
 ```
 

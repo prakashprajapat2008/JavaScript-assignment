@@ -1166,7 +1166,7 @@ outer();
 Output:
 
 ```js
-
+Answer
 
 ```
 

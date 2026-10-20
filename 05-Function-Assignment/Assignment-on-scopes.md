@@ -1509,6 +1509,15 @@ var a = 10;
 ```
 Explain why there is no `ReferenceError` and what value is printed.
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q59.
 Find the issue:
 ```js

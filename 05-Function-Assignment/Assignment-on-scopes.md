@@ -1356,6 +1356,15 @@ outer();
 ```
 Can you access `teacher` or `student` outside `outer()`? Explain.
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q52.
 What will this code print? Explain the accessibility of each variable.
 ```js

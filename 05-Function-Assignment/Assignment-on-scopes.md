@@ -1214,6 +1214,15 @@ console.log(x);
 ```
 Explain why the value of `x` changes depending on the location of `console.log`.
 
+
+Output:
+
+```js
+
+
+```
+
+
 ### Q45.
 Write a nested function structure (at least 3 levels) that prints:
 - A variable from the innermost function

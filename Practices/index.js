@@ -932,14 +932,18 @@ function test() {
     console.log(i); //4
 }
 
+
 test();
 console.log(i); // ReferenceError: i is not defined
+
 
 var a = 10;
 console.log(a); //10
 
+
 console.log(a);
 var a = 10;  // undefined
+
 
 var a 
 console.log(a);  // undefined

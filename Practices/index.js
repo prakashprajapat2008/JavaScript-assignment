@@ -14,6 +14,7 @@ x = 23;
 y = 43;
 console.log(x-y,"ans");
 
+
 x = 23;
 y = 43;
 console.log(x%y,"ans");

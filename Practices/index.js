@@ -955,8 +955,98 @@ let a = 10; // ReferenceError: Cannot access 'a' before initialization
 
 
 
+let x =  10;
+function outer(){
+    let y = 20;
+    function inner(){
+        let z = 30
+
+        console.log(z);
+        console.log(y);
+        console.log(x);
+    }
+
+    inner()
+}
+outer();
 
 
+A local variable can override a global variable with the same name.
+let a = 50;
+function test() {
+    let a = 90;
+    console.log(a)
+}
+test();
+console.log(a)
+
+let a = 50;
+function test() {
+    a = 90;
+    console.log(a)
+}
+test();
+console.log(a)
+
+
+var a = 50;
+function test() {
+   var a = 90;
+    console.log(a)
+}
+test();
+console.log(a)
+
+var a = 50;
+function test() {
+    a=90;
+    console.log(a)
+}
+test();
+console.log(a)
+
+const a = 50;
+function test() {
+   const a = 90;
+    console.log(a)
+}
+test();
+console.log(a)
+
+const a = 50;
+function test() {
+     a = 90;
+    console.log(a)
+}
+test();
+console.log(a)
+
+
+ function outer() {
+    let a = 20;
+    function inner() {
+        let b = 30;
+
+        console.log(b);
+        console.log(a);
+    }
+    inner();
+} 
+outer();
+
+
+function studentInfo() {
+   let name = "rakash Prajapat"
+   let course = "B.Tech CSE AI";
+
+    function display() {
+        console.log("Name =>", name);
+        console.log("Course =>",course)
+    }
+
+    display();
+}
+studentInfo();
 
 
 

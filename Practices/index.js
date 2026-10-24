@@ -1005,6 +1005,7 @@ function test() {
 test();
 console.log(a)
 
+
 const a = 50;
 function test() {
    const a = 90;

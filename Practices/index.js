@@ -997,6 +997,7 @@ function test() {
 test();
 console.log(a)
 
+
 var a = 50;
 function test() {
     a=90;

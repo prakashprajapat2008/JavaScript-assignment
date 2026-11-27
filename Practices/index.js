@@ -1264,4 +1264,41 @@ const numbers = [10, 20, 30, 40, 50];
 console.log(numbers.reverse());
 console.log(numbers.reverse());
 
+const studentNames = ["Rahul", "Aarav", "Zoya", "Meera", "Kiran"];
+console.log(studentNames.sort());
+
+let arr = ["Python", "Java", "JavaScript", "C++"];
+console.log(arr.join("//"))
+
+var arr1 = [1, 2];
+var arr2 = [3, 4];
+console.log(arr1.concat(arr2));
+
+let arr1 = [10, 20, 30];
+let arr2 = [40, 50, 60];
+let arr3 = [70, 80, 90];
+console.log(arr1.concat(arr2, arr3));
+console.log("Array 1 => ", arr1);
+console.log("Array 2 => ", arr2);
+console.log("Array 3 => ", arr3);
+
+var arr = [1, 2, 3];
+console.log(arr.toString()); // "1,2,3"
+
+var arr = [1, 2, 3, 4];
+console.log(arr.fill("Dev"))
+
+var nums = [5, 10, 15, 20, 25, 30];
+console.log(nums.slice(2, 5));
+console.log("arr = >", nums);
+
+var arr = [1, 4, 5];
+arr.splice(1, 0, 2, 3);
+console.log("New Arr => ",arr)
+
+
+
+
+
+
 
